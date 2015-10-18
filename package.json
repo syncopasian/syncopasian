@@ -1,0 +1,22 @@
+{
+  "name": "syncopasian",
+  "version": "0.0.0",
+  "description": "syncopasian ===========",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gjd24scientist/syncopasian.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gjd24scientist/syncopasian/issues"
+  },
+  "homepage": "https://github.com/gjd24scientist/syncopasian",
+  "dependencies": {
+    "express": "4.10.6"
+  }
+}

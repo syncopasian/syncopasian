@@ -1,0 +1,16 @@
+body {
+  font-family: "Roboto", sans-serif;
+  padding-top: 65px;
+}
+.text-blurb {
+  width: 80%;
+}
+.center {
+  text-align: center;
+}
+.member-image {
+  padding-bottom: 20px;
+}
+.member-image img {
+  cursor: pointer;
+}
