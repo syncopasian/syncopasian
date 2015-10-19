@@ -1,6 +1,12 @@
 body {
   font-family: "Roboto", sans-serif;
-  padding-top: 65px;
+  background-color: #e6eff4;
+}
+#page {
+  background: #fff;
+  margin: 50px auto 100px;
+  width: 1020px;
+  box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.20);
 }
 .text-blurb {
   width: 85%;
@@ -17,17 +23,17 @@ body {
   cursor: pointer;
 }
 div.colL {
-    float: left;
-    text-align: left;
-    width: 30%;
+  float: left;
+  text-align: left;
+  width: 30%;
 }
 div.colR {
-    float: left;
-    text-align: left;
-    width: 70%;
+  float: left;
+  text-align: left;
+  width: 70%;
 }
 h4 {
-    font-weight: bold;
+  font-weight: bold;
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
