@@ -1,6 +1,6 @@
 <div class="container-fluid text-blurb">
   <div style="font-size: 20px">Hello! We are <span style="color:blue">Syncopasian</span>, MIT's East-Asian a cappella group.</div><br>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -8,23 +8,27 @@
       <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="/img/carousel/dreamhigh6-940x350.png">
+      <div class="item active" >
+        <img src="/img/carousel/dreamhigh6-940x350.png" width="460" height="445">
+        <!--
         <div class="carousel-caption">
           Watch our Spring 2015 Concert: DREAM HIGH!
         </div>
+        -->
       </div>
-      <div class="item">
-        <img src="/img/carousel/nightmarket_2015-940x345.jpg">
+      <div class="item" >
+        <img src="/img/carousel/nightmarket_2015-940x345.jpg" width="460" height="445">
       </div>
-      <div class="item">
-        <img src="/img/carousel/spring2015photoshoot-940x350.jpg">
+      <div class="item" >
+        <img src="/img/carousel/spring2015photoshoot-940x350.jpg" width="460" height="445">
+        <!--
         <div class="carousel-caption">
           Check out our latest photoshoot by the amazing photographer Joseph Lee!
         </div>
+        -->
       </div>
-      <div class="item">
-        <img src="/img/carousel/welcome_banner-940x345.jpg">
+      <div class="item" >
+        <img src="/img/carousel/welcome_banner-940x345.jpg" width="460" height="445"> 
       </div>
     </div>
     
@@ -38,11 +42,29 @@
     </a>
   </div>
 
-  <div>Ignition</div>
-    <iframe src="http://bandcamp.com/EmbeddedPlayer/album=8527465/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/">
-      <a href="http://syncopasian.bandcamp.com/album/ignition">Ignition by MIT Syncopasian</a>
-    </iframe>
-  <div>Members</div>
-  <div>Who are we?</div>
-  <div>Upcoming performances</div>
+  <table>
+    <tr>
+      <td>
+        <h3>Ignition</h3>
+        <iframe src="http://bandcamp.com/EmbeddedPlayer/album=8527465/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/">
+          <a href="http://syncopasian.bandcamp.com/album/ignition">Ignition by MIT Syncopasian</a>
+        </iframe>
+      </td>
+      <td>
+        <h3>Members</h3>
+          <img src="../img/synco-members.png" class="img-align-left" alt="Who Are We?">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h3>Who are we?</h3>
+          <img src="../img/logo.png" class="img-align-left" alt="Who Are We?">
+          <p>"We are hella legit." - Rujia Zha, '16</p>
+      </td>
+      <td>
+        <h3>Upcoming performances</h3>
+          <img src="../img/synco-events.png" class="img-align-left" alt="Who Are We?">
+      </td>
+    </tr>
+  </table>
 </div>
