@@ -10,6 +10,8 @@ app.use(express.static(public_dir));
 var credentials = {
     key: fs.readFileSync('auth/server.key'),
     cert: fs.readFileSync('auth/server.crt')
+//    ca: fs.readFileSync('auth/mitca.crt'),
+//    requestCert: true
 };
 
 var httpsServer = https.createServer(credentials, app);
