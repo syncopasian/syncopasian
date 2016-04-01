@@ -4,24 +4,18 @@ var fs = require('fs');
 var express = require('express');
 var app = express();
 
+app.set('views', __dirname + '/views');
+app.set('view engine', 'jade');
 var public_dir = __dirname + '/public';
 app.use(express.static(public_dir));
 
-var credentials = {
-    key: fs.readFileSync('auth/server.key'),
-    cert: fs.readFileSync('auth/server.crt')
-//    ca: fs.readFileSync('auth/mitca.crt'),
-//    requestCert: true
-};
-
-var httpsServer = https.createServer(credentials, app);
-
-var httpServer = http.createServer(function(req, res) {
-    res.writeHead(301, { "Location": "https://" + req.headers['host'] + req.url });
-    res.end();
+app.get('/:filename', function(req, res) {
+  res.render(req.params.filename);
 });
 
-httpServer.listen(8080);
-httpsServer.listen(8443);
-//app.listen(process.env.OPENSHIFT_NODEJS_PORT || 8080,
-//  process.env.OPENSHIFT_NODEJS_IP);
+app.get('/', function(req, res) {
+  res.render('index');
+});
+
+var httpServer = http.createServer(app);
+httpServer.listen(3000);

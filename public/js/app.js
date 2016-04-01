@@ -6,31 +6,31 @@ angular.module('syncopasian', ['ui.router'])
   $stateProvider
     .state('home', {
       url: '/home',
-      templateUrl: '/views/home.html'
+      templateUrl: 'home'
     })
     .state('about', {
       url: '/about',
-      templateUrl: '/views/about.html'
+      templateUrl: 'about'
     })
     .state('members', {
       url: '/members',
-      templateUrl: '/views/members.html'
+      templateUrl: 'members'
     })
     .state('gallery', {
       url: '/gallery',
-      templateUrl: '/views/gallery.html'
+      templateUrl: 'gallery'
     })
     .state('performances', {
       url: '/performances',
-      templateUrl: '/views/performances.html'
+      templateUrl: 'performances'
     })
     .state('auditions', {
       url: '/auditions',
-      templateUrl: '/views/auditions.html'
+      templateUrl: 'auditions'
     })
     .state('contact', {
       url: '/contact',
-      templateUrl: '/views/contact.html'
+      templateUrl: 'contact'
     })
   $urlRouterProvider.otherwise('home');
 }]);

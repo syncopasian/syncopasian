@@ -1,0 +1,49 @@
+html
+  body
+    .container-fluid.text-blurb
+      .center(style='font-size: 20px')
+        | Hello! We are 
+        span(style='color:blue') Syncopasian
+        | , MIT's Premier East-Asian a cappella group.
+      br
+      #myCarousel.carousel.slide(data-interval='3000', data-ride='carousel')
+        ol.carousel-indicators
+          li.active(data-target='#myCarousel', data-slide-to='0')
+          li(data-target='#myCarousel', data-slide-to='1')
+          li(data-target='#myCarousel', data-slide-to='2')
+          li(data-target='#myCarousel', data-slide-to='3')
+        .carousel-inner(role='listbox')
+          .item.active
+            img(src='/img/carousel/dreamhigh6-940x350.png', width='460', height='445')
+            .center.flex-caption
+              h4 Watch our Spring 2015 Concert: DREAM HIGH!
+          .item
+            img(src='/img/carousel/nightmarket_2015-940x345.jpg', width='460', height='445')
+          .item
+            img(src='/img/carousel/spring2015photoshoot-940x350.jpg', width='460', height='445')
+            .center.flex-caption
+              h4 Check out our latest photoshoot by the amazing photographer Joseph Lee!
+          .item
+            img(src='/img/carousel/welcome_banner-940x345.jpg', width='460', height='445')
+        a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+          span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+          span.sr-only Previous
+        a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+          span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+          span.sr-only Next
+      table#home-grid.center
+        tr
+          td
+            h4 Ignition
+            img.blk(src='//syncopasian.scripts.mit.edu/wp/wp-content/uploads/2013/12/ignition-150x150.jpg')
+            iframe.blk(src='//bandcamp.com/EmbeddedPlayer/album=8527465/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/')
+          td
+            h4 Members
+            img(src='../img/synco-members.png', alt='Who Are We?')
+        tr
+          td
+            h4 Who are we?
+            img(src='../img/logo.png', alt='Who Are We?')
+          td
+            h4 Upcoming performances
+            img(src='../img/synco-events.png', alt='Who Are We?')
