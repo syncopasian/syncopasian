@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/gjd24scientist/syncopasian",
   "dependencies": {
-    "express": "4.10.6"
+    "express": "4.10.6",
+    "ejs": "~2.5.2"
   }
 }
