@@ -1,0 +1,230 @@
+body {
+  /*font-family: "Quicksand", sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Abel', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Marvel', sans-serif;
+  font-family: 'Advent Pro', sans-serif;*/
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  font-size: 13pt;
+  background-color: #73b3ca;
+}
+
+h1 {
+  font-size: 20pt;
+}
+
+h2 {
+  font-size: 15pt;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 14pt;
+  font-weight: 100;
+}
+
+p {
+  font-size: 14pt;
+}
+
+.narrow-bar {
+  height: 5px;
+  background: #5da7c1;
+}
+
+#contact-top {
+  width: 100%;
+  display: flex;
+}
+
+#contact-head {
+  font-size: 22pt;
+  width: 40%;
+}
+
+#contact-links {
+  padding-top: 3px;
+  width: 60%;
+}
+
+#contact-content {
+  width: 100%;
+  display: flex;
+}
+
+#contact-text {
+  width: 59%;
+  margin-right: 6%;
+}
+
+#gig_salad {
+  width: 35%;
+}
+
+#container-fluid {
+  padding: 0px;
+  margin: 0px;
+}
+
+#page {
+  background: #FFFFFF;
+  margin: auto;
+  width: 1020px;
+  border: none !important;
+  box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.20);
+  padding-bottom: 50px;
+}
+
+.text-blurb {
+  padding-top: 20px;
+  width: 88%;
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.member-bio {
+  padding-bottom: 50px;
+  vertical-align: text-top;
+  width: 100%;
+  display: flex;
+}
+
+.member-image img {
+  cursor: pointer;
+}
+
+div.colL {
+  text-align: left;
+  width: 25%;
+}
+
+div.colR {
+  text-align: left;
+  width: 73%;
+  padding-left: 2%;
+}
+
+.carousel-control {
+  background: none;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+  margin: auto;
+  -webkit-transition: 1s ease-in-out left;
+  -moz-transition: 1s ease-in-out left;
+  -o-transition: 1s ease-in-out left;
+  transition: 1s ease-in-out left;
+}
+
+.navbar-default {
+  background-color: #FFFFFF;
+  border: none !important;
+}
+
+.navbar-nav {
+  padding-top: 18px;
+  padding-bottom: 3px;
+  padding-left: 1%;
+  width: 28%;
+}
+
+.navbar-nav>li>a {
+  padding: 0px;
+}
+
+.nav-btn {
+  font-size: 16pt;
+  text-align: center;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.nav-btn:hover {
+  color: black;
+}
+
+.navbar-right {
+  float: right;
+  width: 70%;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 50px;
+}
+
+.nav-btn > a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-btn:hover > a {
+}
+
+.navbar-collapse {
+  margin: 0px;
+  padding: 0px;
+}
+
+.collapse {
+  margin: 0px;
+  padding: 0px;
+}
+
+.dropdown-menu {
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.carousel-indicators {
+  top: 10px;
+}
+
+.flex-caption {
+  width: 100%;
+  padding: 1%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #ffffff;
+  background: url("//syncopasian.scripts.mit.edu/wp/wp-content/themes/simplecorp/library/images/caption-bg.png") repeat;
+}
+
+.flex-caption>h4 {
+  color: white;
+  font-weight: 200;
+}
+
+td {
+  vertical-align: top;
+}
+
+#home-grid {
+  margin-top: 20px;
+}
+
+.blk {
+  vertical-align: middle;
+}
+
+#gallery {
+  display: flex;
+}
+
+#gallery_left {
+  width: 30%;
+}
+
+#gallery_right {
+  text-align: right;
+  width: 70%;
+}
+
