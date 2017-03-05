@@ -20,9 +20,9 @@ angular.module('syncopasian', ['ui.router'])
       url: '/gallery',
       templateUrl: 'gallery'
     })
-    .state('performances', {
-      url: '/performances',
-      templateUrl: 'performances'
+    .state('news', {
+      url: '/news',
+      templateUrl: 'news'
     })
     .state('auditions', {
       url: '/auditions',

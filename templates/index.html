@@ -18,9 +18,8 @@
 
   <body ng-app="syncopasian">
     <div id="page">
-    <nav class="navbar navbar-default">
-
         <!-- Brand and toggle get grouped for better mobile display -->
+    <!--<nav class="navbar navbar-default">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -29,28 +28,25 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-
+	</nav>-->
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar">
-          <ul class="nav navbar-nav">
-            <li><a href="#/home" class="index-page"><img src="/static/img/synco_logo.png" width="200px"></img></a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#/about" class="content-page"><div class="nav-btn">About</div></a></li>
-            <li><a href="#/members" class="content-page"><div class="nav-btn">Members</div></a></li>
-            <li><a href="#/performances" class="content-page"><div class="nav-btn">Performances</div></a></li>
-            <li><a href="#/auditions" class="content-page"><div class="nav-btn">Auditions</div></a></li>
-            <!--<li>
-              <a class="nav-btn dropdown dropdown-toggle" data-toggle="dropdown"><div class="nav-btn">Events<span class="caret"></span></div></a>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="#/performances">Performances</a></li>
-                    <li><a href="#/auditions">Auditions</a></li>
-                </ul>
-            </li>-->
-            <li><a href="#/contact"><div class="nav-btn">Contact Us</div></a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-    </nav>
+        <div id="navbar">
+            <a href="#/home" class="index-page"><img src="/static/img/synco_logo.png" height="55px" style="padding-top: 3px;"></img></a>
+          <span class="my-nav">
+           	<a href="#/about" class="my-nav-btn content-page">About</a>
+           	<span class="dropdown">
+							<a href="#/members"><div class="my-nav-btn content-page">Members &nbsp;<span class="caret"></span></div></a>
+             	<div class="dropdown-content">
+								<a href="#/performances" class="content-page">Current</a>
+             		<a href="#/auditions" class="content-page">Alumni</a>
+							</div>
+						</span>
+            <a href="#/news" class="my-nav-btn content-page">News</a>
+            <a href="#/auditions" class="my-nav-btn content-page">Auditions</a>
+            <a href="#/contact" class="my-nav-btn content-page">Contact Us</a>
+				</span>
+    	</div><!-- id="navbar" -->
+
     <div id="group-photo">
         <div class="narrow-bar"> </div>
         <img src="/static/img/spring2016photoshoot-cropped.jpg" style="width:100%"></img>

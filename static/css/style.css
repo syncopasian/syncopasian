@@ -35,6 +35,13 @@ p {
   background: #5da7c1;
 }
 
+.carousel-control {
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
 #contact-top {
   width: 100%;
   display: flex;
@@ -72,7 +79,7 @@ p {
 #page {
   background: #FFFFFF;
   margin: auto;
-  width: 1020px;
+  width: 1000px;
   border: none !important;
   box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.20);
   padding-bottom: 50px;
@@ -124,47 +131,58 @@ div.colR {
   transition: 1s ease-in-out left;
 }
 
+.navbar-header {
+  margin: 0;
+  padding: 0;
+}
+
 .navbar-default {
-  background-color: #FFFFFF;
   border: none !important;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar-nav {
-  padding-top: 18px;
-  padding-bottom: 3px;
-  padding-left: 1%;
-  width: 28%;
+#navbar {
+	height: 65px;
 }
 
-.navbar-nav>li>a {
-  padding: 0px;
+.my-nav {
+	float: right;
+	display: flex;
 }
 
-.nav-btn {
+.my-nav-btn {
   font-size: 16pt;
   text-align: center;
   padding-left: 28px;
   padding-right: 28px;
-}
-
-.nav-btn:hover {
-  color: black;
-}
-
-.navbar-right {
-  float: right;
-  width: 70%;
-  margin: 0px;
-  padding: 0px;
-  padding-top: 50px;
-}
-
-.nav-btn > a {
+  padding-top: 30px;
+  height: 65px;
+  margin: 0;
   text-decoration: none;
   color: black;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
-.nav-btn:hover > a {
+.my-nav a {
+	text-decoration: none;
+}
+
+.my-nav a:visited {
+	text-decoration: none;
+}
+
+.my-nav a:active {
+	text-decoration: none;
+}
+
+.my-nav-btn:hover {
+	text-decoration: none;
+  background-color: #5da7c1;
+  color: white;
 }
 
 .navbar-collapse {
@@ -177,15 +195,40 @@ div.colR {
   padding: 0px;
 }
 
-.dropdown-menu {
+.dropdown-content {
+  display: none;
+  position: absolute;
+	z-index: 1;
+	cursor: pointer;
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown-content a {
+  display: block;
+  font-size: 16pt;
+  text-align: center;
+	width: 180px;
+  padding-top: 15px;
+  height: 50px;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+	background-color: white;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #5da7c1;
+}
+
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
 .carousel-indicators {
-  top: 10px;
+  bottom: 5px;
 }
 
 .flex-caption {
@@ -205,10 +248,6 @@ div.colR {
 
 td {
   vertical-align: top;
-}
-
-#home-grid {
-  margin-top: 20px;
 }
 
 .blk {
