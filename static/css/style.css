@@ -1,33 +1,37 @@
 body {
-  /*font-family: "Quicksand", sans-serif;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-family: 'Abel', sans-serif;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-family: 'Dosis', sans-serif;
-  font-family: 'Marvel', sans-serif;
-  font-family: 'Advent Pro', sans-serif;*/
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 200;
   font-size: 13pt;
+  line-height: 180%;
   background-color: #73b3ca;
 }
 
 h1 {
+  padding: 0;
+  margin: 0;
   font-size: 20pt;
+  line-height: 180%;
 }
 
 h2 {
+  padding: 0;
+  margin: 0;
   font-size: 15pt;
   font-weight: 100;
+  line-height: 180%;
 }
 
 h3 {
+  padding: 0;
+  margin: 0;
   font-size: 14pt;
   font-weight: 100;
+  line-height: 180%;
 }
 
 p {
-  font-size: 14pt;
+  font-size: 13.5pt;
+  line-height: 180%;
 }
 
 .narrow-bar {
@@ -152,7 +156,7 @@ div.colR {
 }
 
 .my-nav-btn {
-  font-size: 16pt;
+  font-size: 14pt;
   text-align: center;
   padding-left: 28px;
   padding-right: 28px;
@@ -167,6 +171,42 @@ div.colR {
   transition: 0.5s ease;
 }
 
+.my-nav-btn a {
+  color: black;
+  display: block;
+}
+
+.my-nav-btn:hover {
+    text-decoration: none;
+    background-color: #5da7c1;
+    color: white;
+}
+
+.my-nav-active {
+    color: white;
+    background-color: #5da7c1;
+}
+
+.my-nav-active a:link {
+  color: white;
+}
+
+.my-nav-active a:hover {
+  color: white;
+}
+
+.my-nav-active a:active {
+  color: white;
+}
+
+.my-nav-active a:focus {
+  color: white;
+}
+
+.my-nav-active a:visited {
+  color: white;
+}
+
 .my-nav a {
 	text-decoration: none;
 }
@@ -177,12 +217,6 @@ div.colR {
 
 .my-nav a:active {
 	text-decoration: none;
-}
-
-.my-nav-btn:hover {
-	text-decoration: none;
-  background-color: #5da7c1;
-  color: white;
 }
 
 .navbar-collapse {
@@ -198,21 +232,22 @@ div.colR {
 .dropdown-content {
   display: none;
   position: absolute;
-	z-index: 1;
-	cursor: pointer;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .dropdown-content a {
   display: block;
-  font-size: 16pt;
-  text-align: center;
-	width: 180px;
-  padding-top: 15px;
+  font-size: 13pt;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 30px;
+  width: 163px;
   height: 50px;
   margin: 0;
   text-decoration: none;
   color: black;
-	background-color: white;
+  background-color: white;
   -webkit-transition: 0.5s ease;
   -moz-transition: 0.5s ease;
   -o-transition: 0.5s ease;
