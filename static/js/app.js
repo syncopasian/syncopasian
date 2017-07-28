@@ -12,11 +12,7 @@ angular.module('syncopasian', ['ui.router'])
       url: '/about',
       templateUrl: 'about'
     })
-    .state('members', {
-      url: '/members',
-      templateUrl: 'members'
-    })
-	.state('current-members', {
+    .state('current-members', {
 	  url: '/current-members',
 	  templateUrl: 'current-members'
 	})
