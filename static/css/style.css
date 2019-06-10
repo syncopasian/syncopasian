@@ -344,3 +344,7 @@ td {
 	padding-left: 2%;
 	width: 65%;
 }
+
+#memberphotos img{
+  width: 200px;
+}
