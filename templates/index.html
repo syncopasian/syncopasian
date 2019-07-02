@@ -62,10 +62,10 @@
         });
           
         $(".content-page").click(function (evt) {
-
+            // needed to change the pic back to normal when navigating from the alumni page
             var pic = document.getElementById("group-photo-image");
-  pic.src = '/static/img/banner.jpg';
-  
+           pic.src = '/static/img/banner.jpg';
+
           $(".content-page").removeClass("my-nav-active");
           $(".content-page").addClass("my-nav-btn");
           var target = $(evt.target);
