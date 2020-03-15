@@ -9,6 +9,7 @@ Getting Started
 - pip install -t lib -r requirements.txt
 
 Showing Your Changes In Localhost:
+- The site has been migrated to Python 3, but you must be using an environment that also has access to Python 2. The libraries are in Python 3, but Python 2.7 is necessary to use dev_appserver.py .
 - dev_appserver.py app.yaml
 - see the website on http://localhost:8080
 
