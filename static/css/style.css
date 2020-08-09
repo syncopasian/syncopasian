@@ -1,9 +1,35 @@
+:root {
+  --syncoblue: #44c5ec;
+  --syncoblue--light: #5da7c1;
+  --syncoblue--xlight: #73b3ca;
+
+  --secondary: #EC6B44;
+
+  --white: #ffffff;
+  --black: #333333;
+
+  --xs: 4px;
+  --s: 8px;
+  --m: 16px;
+  --l: 24px;
+}
+
+.u-flex {
+  display: flex; 
+  /* implied flex-direction: row */
+}
+
+.u-flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
   font-size: 13pt;
   line-height: 180%;
-  background-color: #73b3ca;
+  background-color: var(--syncoblue--xlight);
 }
 
 h1 {
@@ -36,7 +62,7 @@ p {
 
 .narrow-bar {
   height: 5px;
-  background: #5da7c1;
+  background: var(--syncoblue--light);
 }
 
 .carousel-control {
@@ -81,7 +107,7 @@ p {
 }
 
 #page {
-  background: #FFFFFF;
+  background: var(--white);
   margin: auto;
   width: 1000px;
   border: none !important;
@@ -178,13 +204,13 @@ div.colR {
 
 .my-nav-btn:hover {
     text-decoration: none;
-    background-color: #5da7c1;
-    color: white;
+    background-color: var(--syncoblue--light);
+    color: var(--white);
 }
 
 .my-nav-active {
-    color: white;
-    background-color: #5da7c1;
+    color: var(--white);
+    background-color: var(--syncoblue--light);
 }
 
 .my-nav-active a:link {
@@ -255,7 +281,7 @@ div.colR {
 }
 
 .dropdown-content a:hover {
-  background-color: #5da7c1;
+  background-color: var(--syncoblue--light);
 }
 
 .dropdown:hover .dropdown-content {
