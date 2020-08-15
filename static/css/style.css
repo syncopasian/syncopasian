@@ -374,3 +374,24 @@ td {
 #memberphotos img{
   width: 200px;
 }
+
+.footer {
+  background-color: var(--grey);
+  color: var(--black);
+  padding: 6px 0;
+  justify-content: space-between;
+  /* text-align: right; */
+}
+
+/* .media-icon {
+  text-decoration: none;
+} */
+/* specifically, I include this to prevent the appearance of a small line next to the img link. For some reason putting the styling here doesn't work, but setting the style in the HTML does work... */
+
+.media-icon img {
+  /* height: 40px;
+  width: 40px; */
+  padding-right: 5px;
+  /* text-decoration: none;
+  border: none; */
+}
