@@ -36,5 +36,9 @@ angular.module('syncopasian', ['ui.router'])
       url: '/contact',
       templateUrl: 'contact'
     })
+    .state('discography', {
+      url: '/discography',
+      templateUrl: 'discography'
+    })
   $urlRouterProvider.otherwise('home');
 }]);
