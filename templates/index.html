@@ -1,11 +1,11 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
   <head>
     <title>MIT Syncopasian</title>
-    <meta name="description" content="MIT's premier East Asian a cappella group">
+    <meta name="description" content="Website for Syncopasian, MIT's premier East Asian a cappella group">
     <meta name="keywords" content="MIT, Syncopasian, East Asian, a cappella, singing">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <link rel="shortcut icon" href="/static/img/logo_new.png"/>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/style.css"/>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -13,46 +13,6 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.11/angular-ui-router.min.js"></script>
     <script src="/static/js/app.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Abel|Josefin+Sans|Poiret+One|Quicksand|Raleway|Sacramento|Open+Sans+Condensed:300|Abel|Open+Sans+Condensed:300|Yanone+Kaffeesatz:200|Dosis:200|Marvel|Advent+Pro:300|Khula:300|Josefin+Sans:300|Montserrat:200" rel="stylesheet">
-  </head>
-
-  <body ng-app="syncopasian">
-    <div id="page">
-        <!-- Brand and toggle get grouped for better mobile display -->
-    <!--<nav class="navbar navbar-default">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-	</nav>-->
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div id="navbar">
-            <a href="#/home" class="index-page"><img src="/static/img/synco_logo.png" height="55px" style="padding-top: 3px;"></img></a>
-          <span class="my-nav">
-              <a href="#/about"><div id="about-link" class="my-nav-btn content-page">About</div></a>
-           	<span class="dropdown">
-							<a href="#/current-members"><div id="members-link" class="my-nav-btn content-page">Members <!--&nbsp<span class="caret"></span>--></div></a>
-<!--              	<div class="dropdown-content">
-								<a href="#/current-members" class="content-page my-dropdown">Current</a>
-             		<a href="#/alumni" class="content-page my-dropdown">Alumni</a>
-							</div> -->
-						</span>
-              <a href="#/news"><div id="news-link" class="my-nav-btn content-page">News</div></a>
-              <a href="#/auditions"><div id="auditions-link" class="my-nav-btn content-page">Auditions</div></a>
-              <a href="#/contact"><div id="contact-link" class="my-nav-btn content-page">Contact Us</div></a>
-				</span>
-    	</div><!-- id="navbar" -->
-
-    <div id="group-photo">
-        <div class="narrow-bar"> </div>
-        <img id= "group-photo-image" src="/static/img/banner.jpg" style="width:100%">
-        <div class="narrow-bar"> </div>
-        <div style="height: 20px"> </div>
-    </div>
     <script>
       $(document).ready(function(){
         $(".index-page").click(function () {
@@ -62,10 +22,9 @@
         });
           
         $(".content-page").click(function (evt) {
-            // needed to change the pic back to normal when navigating from the alumni page
-            var pic = document.getElementById("group-photo-image");
-           pic.src = '/static/img/banner.jpg';
-
+          // needed to change the pic back to normal when navigating from the alumni page
+          var pic = document.getElementById("group-photo-image");
+          pic.src = '/static/img/banner.jpg';
           $(".content-page").removeClass("my-nav-active");
           $(".content-page").addClass("my-nav-btn");
           var target = $(evt.target);
@@ -79,6 +38,37 @@
         })
       });
     </script>
+    <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Josefin+Sans|Poiret+One|Quicksand|Raleway|Sacramento|Open+Sans+Condensed:300|Abel|Open+Sans+Condensed:300|Yanone+Kaffeesatz:200|Dosis:200|Marvel|Advent+Pro:300|Khula:300|Josefin+Sans:300|Montserrat:200" rel="stylesheet"> -->
+  </head>
+
+  <body ng-app="syncopasian">
+    <div class="navbar u-flex">
+      <div class="navbar-logo-container">
+        <a href="#/home" class="index-page">
+          <img src="/static/img/synco_logo.png" class="navbar-logo-img"></img>
+        </a>
+      </div>
+      <div class="navbar-links-container">
+        <a href="#/about" class="my-nav-btn content-page">About</a>
+        <a href="#/current-members" class="my-nav-btn content-page">Members</a>
+        <a href="#/discography" class="my-nav-btn content-page">Discography</a>
+        <a href="#/news" class="my-nav-btn content-page">News</a>
+        <a href="#/auditions" class="my-nav-btn content-page">Auditions</a>
+        <a href="#/contact" class="my-nav-btn content-page">Contact Us</a>
+      </div>
+    </div>
+
+    <div id="page">
+      <div id="group-photo">
+        <div class="narrow-bar"> </div>
+        <img id="group-photo-image" src="/static/img/banner.jpg" style="width:100%" alt="Syncopasian performing on stage">
+        <div class="narrow-bar"> </div>
+        <div style="height: 20px"> </div>
+      </div>
+      <ui-view></ui-view> <!-- where the actual content is rendered -->
+    </div>
+    
     <div class="footer u-flex">
       <!-- line heights of these divs must be equal to the line height of the parent to vertically center their contents -->
       <div style="padding-left: 2em; line-height: 62px;">
