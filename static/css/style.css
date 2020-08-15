@@ -1,3 +1,6 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 :root {
   --syncoblue: #44c5ec;
   --syncoblue--light: #5da7c1;
@@ -6,6 +9,7 @@
   --secondary: #EC6B44;
 
   --white: #ffffff;
+  --grey: #DDDDDD;
   --black: #333333;
 
   --xs: 4px;
@@ -22,6 +26,10 @@
 .u-flexColumn {
   display: flex;
   flex-direction: column;
+}
+
+.u-noTextDec {
+  text-decoration: none;
 }
 
 body {
@@ -109,7 +117,7 @@ p {
 #page {
   background: var(--white);
   margin: auto;
-  width: 1000px;
+  /* width: 1000px; */
   border: none !important;
   box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.20);
   padding-bottom: 50px;
@@ -125,11 +133,18 @@ p {
   text-align: center;
 }
 
+.bios-container {
+  align-items: center;
+}
+
 .member-bio {
   padding-bottom: 50px;
   vertical-align: text-top;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* background-color: #BBBBBB; */
 }
 
 .member-image img {
@@ -139,6 +154,7 @@ p {
 div.colL {
   text-align: left;
   width: 25%;
+  min-width: 200px;
 }
 
 div.colR {
@@ -161,6 +177,26 @@ div.colR {
   transition: 1s ease-in-out left;
 }
 
+.navbar {
+  height: 75px;
+  padding: var(--s) var(--l);
+  display: flex;
+}
+
+.navbar-logo-container {
+
+}
+
+.navbar-logo-img {
+  height: 128px;
+}
+
+.navbar-links-container {
+  display: flex;
+  align-self: center;
+  padding-right: var(--l);
+}
+
 .navbar-header {
   margin: 0;
   padding: 0;
@@ -170,10 +206,6 @@ div.colR {
   border: none !important;
   margin: 0;
   padding: 0;
-}
-
-#navbar {
-	height: 65px;
 }
 
 .my-nav {
@@ -195,22 +227,22 @@ div.colR {
   -moz-transition: 0.5s ease;
   -o-transition: 0.5s ease;
   transition: 0.5s ease;
+  display: block;
 }
 
 .my-nav-btn a {
   color: black;
-  display: block;
 }
 
 .my-nav-btn:hover {
-    text-decoration: none;
-    background-color: var(--syncoblue--light);
-    color: var(--white);
+  text-decoration: none;
+  background-color: var(--syncoblue--light);
+  color: var(--white);
 }
 
 .my-nav-active {
-    color: var(--white);
-    background-color: var(--syncoblue--light);
+  color: var(--white);
+  background-color: var(--syncoblue--light);
 }
 
 .my-nav-active a:link {
@@ -302,7 +334,7 @@ div.colR {
   background: url("//syncopasian.scripts.mit.edu/wp/wp-content/themes/simplecorp/library/images/caption-bg.png") repeat;
 }
 
-.flex-caption>h4 {
+.flex-caption > h4 {
   color: white;
   font-weight: 200;
 }
@@ -371,7 +403,7 @@ td {
 	width: 65%;
 }
 
-#memberphotos img{
+#memberphotos img {
   width: 200px;
 }
 
