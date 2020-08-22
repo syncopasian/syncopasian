@@ -68,6 +68,10 @@ p {
   line-height: 180%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .narrow-bar {
   height: 5px;
   background: var(--syncoblue--light);
@@ -181,19 +185,39 @@ div.colR {
   height: 75px;
   padding: var(--s) var(--l);
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0px;
 }
 
 .navbar-logo-container {
-
+  height: 100px;
+  flex-wrap: nowrap;
 }
 
 .navbar-logo-img {
-  height: 128px;
+  height: 100%;
+}
+
+.navbar-logo-text {
+  font-size: 18pt;
+  /* text-align: center; */
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 20px;
+  height: 65px;
+  margin: 0;
+  text-decoration: none;
+  color: var(--black);
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .navbar-links-container {
   display: flex;
-  align-self: center;
+  /* align-self: center; */
   padding-right: var(--l);
 }
 
@@ -222,7 +246,7 @@ div.colR {
   height: 65px;
   margin: 0;
   text-decoration: none;
-  color: black;
+  color: var(--black);
   -webkit-transition: 0.5s ease;
   -moz-transition: 0.5s ease;
   -o-transition: 0.5s ease;
@@ -231,7 +255,7 @@ div.colR {
 }
 
 .my-nav-btn a {
-  color: black;
+  color: var(--black);
 }
 
 .my-nav-btn:hover {
@@ -246,23 +270,23 @@ div.colR {
 }
 
 .my-nav-active a:link {
-  color: white;
+  color: var(--white);
 }
 
 .my-nav-active a:hover {
-  color: white;
+  color: var(--white);
 }
 
 .my-nav-active a:active {
-  color: white;
+  color: var(--white);
 }
 
 .my-nav-active a:focus {
-  color: white;
+  color: var(--white);
 }
 
 .my-nav-active a:visited {
-  color: white;
+  color: var(--white);
 }
 
 .my-nav a {
