@@ -78,10 +78,16 @@ a {
 }
 
 .carousel-control {
-    -webkit-transition: 0.5s ease;
-    -moz-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
-    transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.carousel-control span img {
+  height: 35px;
+  top: 50%;
+  position: absolute;
 }
 
 #contact-top {
