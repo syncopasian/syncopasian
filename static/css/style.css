@@ -72,6 +72,11 @@ a {
   text-decoration: none;
 }
 
+hr {
+  margin: 30px 0px;
+  border-top: 1px solid var(--grey);
+}
+
 .narrow-bar {
   height: 5px;
   background: var(--syncoblue--light);
