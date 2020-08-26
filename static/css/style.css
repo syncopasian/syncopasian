@@ -134,9 +134,13 @@ a {
 }
 
 .text-blurb {
-  padding-top: 20px;
-  width: 88%;
+  padding-top: 50px;
+  width: 75%;
   margin: auto;
+}
+
+.text-blurb p {
+  text-align: justify;
 }
 
 .center {
