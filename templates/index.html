@@ -15,12 +15,6 @@
     <script src="/static/js/app.js"></script>
     <script>
       $(document).ready(function(){
-        $(".index-page").click(function () {
-          $(".content-page").removeClass("my-nav-active");
-          $(".content-page").addClass("my-nav-btn");
-          document.getElementById("group-photo").style.display = "none";
-        });
-          
         $(".content-page").click(function (evt) {
           // needed to change the pic back to normal when navigating from the alumni page
           var pic = document.getElementById("group-photo-image");
@@ -31,15 +25,8 @@
           target.addClass("my-nav-active");
           document.getElementById("group-photo").style.display = "block";
         });
-          
-        $(".my-dropdown").click(function () {
-          $(".content-page").removeClass("my-nav-active");
-          $("#members-link").addClass("my-nav-active");
-        })
       });
     </script>
-    <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans">
-    <link href="https://fonts.googleapis.com/css?family=Abel|Josefin+Sans|Poiret+One|Quicksand|Raleway|Sacramento|Open+Sans+Condensed:300|Abel|Open+Sans+Condensed:300|Yanone+Kaffeesatz:200|Dosis:200|Marvel|Advent+Pro:300|Khula:300|Josefin+Sans:300|Montserrat:200" rel="stylesheet"> -->
   </head>
 
   <body ng-app="syncopasian">
