@@ -15,11 +15,11 @@ angular.module('syncopasian', ['ui.router'])
     .state('current-members', {
 	  url: '/current-members',
 	  templateUrl: 'current-members'
-	})
-	.state('alumni', {
-	  url: '/alumni',
-	  templateUrl: 'alumni'
-	})
+    })
+    .state('alumni', {
+      url: '/alumni',
+      templateUrl: 'alumni'
+    })
     .state('gallery', {
       url: '/gallery',
       templateUrl: 'gallery'
@@ -35,6 +35,10 @@ angular.module('syncopasian', ['ui.router'])
     .state('contact', {
       url: '/contact',
       templateUrl: 'contact'
+    })
+    .state('discography', {
+      url: '/discography',
+      templateUrl: 'discography'
     })
   $urlRouterProvider.otherwise('home');
 }]);

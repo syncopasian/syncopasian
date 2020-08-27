@@ -2,3 +2,4 @@
 lib/
 *.pyc
 *.swp
+__pycache__/

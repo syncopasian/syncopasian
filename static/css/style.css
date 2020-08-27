@@ -1,9 +1,43 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+:root {
+  --syncoblue: #44c5ec;
+  --syncoblue--light: #5da7c1;
+  --syncoblue--xlight: #73b3ca;
+
+  --secondary: #EC6B44;
+
+  --white: #ffffff;
+  --grey: #DDDDDD;
+  --black: #333333;
+
+  --xs: 4px;
+  --s: 8px;
+  --m: 16px;
+  --l: 24px;
+}
+
+.u-flex {
+  display: flex; 
+  /* implied flex-direction: row */
+}
+
+.u-flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.u-noTextDec {
+  text-decoration: none;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
   font-size: 13pt;
   line-height: 180%;
-  background-color: #73b3ca;
+  background-color: var(--syncoblue--xlight);
 }
 
 h1 {
@@ -34,16 +68,31 @@ p {
   line-height: 180%;
 }
 
+a {
+  text-decoration: none;
+}
+
+hr {
+  margin: 30px 0px;
+  border-top: 1px solid var(--grey);
+}
+
 .narrow-bar {
   height: 5px;
-  background: #5da7c1;
+  background: var(--syncoblue--light);
 }
 
 .carousel-control {
-    -webkit-transition: 0.5s ease;
-    -moz-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
-    transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.carousel-control span img {
+  height: 35px;
+  top: 50%;
+  position: absolute;
 }
 
 #contact-top {
@@ -81,22 +130,30 @@ p {
 }
 
 #page {
-  background: #FFFFFF;
+  background: var(--white);
   margin: auto;
-  width: 1000px;
+  /* width: 1000px; */
   border: none !important;
   box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.20);
   padding-bottom: 50px;
 }
 
 .text-blurb {
-  padding-top: 20px;
-  width: 88%;
+  padding-top: 50px;
+  width: 65%;
   margin: auto;
+}
+
+.text-blurb p {
+  text-align: justify;
 }
 
 .center {
   text-align: center;
+}
+
+.bios-container {
+  align-items: center;
 }
 
 .member-bio {
@@ -104,6 +161,9 @@ p {
   vertical-align: text-top;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* background-color: #BBBBBB; */
 }
 
 .member-image img {
@@ -113,6 +173,7 @@ p {
 div.colL {
   text-align: left;
   width: 25%;
+  min-width: 200px;
 }
 
 div.colR {
@@ -135,6 +196,62 @@ div.colR {
   transition: 1s ease-in-out left;
 }
 
+/* Note that "navbar" inherits some default stylings from Bootstrap, hence the !important overrides */
+.navbar {
+  height: 100px;
+  padding: var(--s) var(--l);
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  /* margin: 25px 0px; */
+  background-color: var(--white);
+  border-radius: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.navbar-logo-container {
+  height: 100px;
+  padding: 0px 40px;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.navbar-logo-container:hover {
+  background-color: var(--syncoblue--light);
+}
+
+.navbar-logo-img {
+  height: 100%;
+}
+
+.navbar-logo-text {
+  font-size: 18pt;
+  /* text-align: center; */
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 65px;
+  margin: 0;
+  text-decoration: none;
+  color: var(--black);
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.navbar-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-self: center; */
+  /* padding-right: var(--l); */
+  /* align-items: center; */
+}
+
 .navbar-header {
   margin: 0;
   padding: 0;
@@ -144,10 +261,6 @@ div.colR {
   border: none !important;
   margin: 0;
   padding: 0;
-}
-
-#navbar {
-	height: 65px;
 }
 
 .my-nav {
@@ -164,47 +277,47 @@ div.colR {
   height: 65px;
   margin: 0;
   text-decoration: none;
-  color: black;
+  color: var(--black);
   -webkit-transition: 0.5s ease;
   -moz-transition: 0.5s ease;
   -o-transition: 0.5s ease;
   transition: 0.5s ease;
-}
-
-.my-nav-btn a {
-  color: black;
   display: block;
 }
 
+.my-nav-btn a {
+  color: var(--black);
+}
+
 .my-nav-btn:hover {
-    text-decoration: none;
-    background-color: #5da7c1;
-    color: white;
+  text-decoration: none;
+  background-color: var(--syncoblue--light);
+  color: var(--white);
 }
 
 .my-nav-active {
-    color: white;
-    background-color: #5da7c1;
+  color: var(--white);
+  background-color: var(--syncoblue--light);
 }
 
 .my-nav-active a:link {
-  color: white;
+  color: var(--white);
 }
 
 .my-nav-active a:hover {
-  color: white;
+  color: var(--white);
 }
 
 .my-nav-active a:active {
-  color: white;
+  color: var(--white);
 }
 
 .my-nav-active a:focus {
-  color: white;
+  color: var(--white);
 }
 
 .my-nav-active a:visited {
-  color: white;
+  color: var(--white);
 }
 
 .my-nav a {
@@ -255,7 +368,7 @@ div.colR {
 }
 
 .dropdown-content a:hover {
-  background-color: #5da7c1;
+  background-color: var(--syncoblue--light);
 }
 
 .dropdown:hover .dropdown-content {
@@ -276,7 +389,7 @@ div.colR {
   background: url("//syncopasian.scripts.mit.edu/wp/wp-content/themes/simplecorp/library/images/caption-bg.png") repeat;
 }
 
-.flex-caption>h4 {
+.flex-caption > h4 {
   color: white;
   font-weight: 200;
 }
@@ -306,10 +419,10 @@ td {
 #gallery_right a {
 	font-size: 15pt;
 	color: #1089b5;
-    -webkit-transition: 0.1s ease;
-    -moz-transition: 0.1s ease;
-    -o-transition: 0.1s ease;
-    transition: 0.1s ease;
+  -webkit-transition: 0.1s ease;
+  -moz-transition: 0.1s ease;
+  -o-transition: 0.1s ease;
+  transition: 0.1s ease;
 }
 
 #gallery_right a:hover {
@@ -345,6 +458,74 @@ td {
 	width: 65%;
 }
 
-#memberphotos img{
+#memberphotos img {
   width: 200px;
+}
+
+.footer {
+  background-color: var(--grey);
+  color: var(--black);
+  padding: 5px 0;
+  justify-content: space-between;
+  /* text-align: right; */
+  line-height: 40px;
+}
+
+/* .media-icon {
+  text-decoration: none;
+} */
+/* specifically, I include this to prevent the appearance of a small line next to the img link. For some reason putting the styling here doesn't work, but setting the style in the HTML does work... */
+
+.media-icon img {
+  height: 40px;
+  width: 40px;
+  margin-right: 3px;
+  /* text-decoration: none;
+  border: none; */
+}
+
+/* this container is used to create a responsive youtube iframe that resizes intelligently 
+  Technique adopted from https://www.avexdesigns.com/blog/responsive-youtube-embed
+*/
+.youtube-container {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.youtube-container iframe, .youtube-container object, .youtube-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.page-button-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.page-button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  color: var(--black);
+  background-color: transparent;
+  border-radius: 3px;
+  transition: 0.5s ease;
+  text-align: center;
+  padding: 21px 34px;
+  margin: 20px 10px;
+  border: 2px solid var(--black);
+  text-decoration: none;
+}
+
+.page-button:hover {
+  color: var(--white);
+  background-color: var(--syncoblue);
+  border: 2px solid var(--syncoblue);
+  cursor: pointer;
+  text-decoration: none;
 }
