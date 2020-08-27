@@ -196,18 +196,31 @@ div.colR {
   transition: 1s ease-in-out left;
 }
 
+/* Note that "navbar" inherits some default stylings from Bootstrap, hence the !important overrides */
 .navbar {
-  height: 75px;
+  height: 100px;
   padding: var(--s) var(--l);
   display: flex;
+  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
-  margin: 25px 0px;
+  /* margin: 25px 0px; */
+  background-color: var(--white);
+  border-radius: 0px !important;
+  margin-bottom: 0px !important;
 }
 
 .navbar-logo-container {
   height: 100px;
-  flex-wrap: nowrap;
+  padding: 0px 40px;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.navbar-logo-container:hover {
+  background-color: var(--syncoblue--light);
 }
 
 .navbar-logo-img {
@@ -220,6 +233,7 @@ div.colR {
   padding-left: 28px;
   padding-right: 28px;
   padding-top: 20px;
+  padding-bottom: 20px;
   height: 65px;
   margin: 0;
   text-decoration: none;
@@ -232,8 +246,10 @@ div.colR {
 
 .navbar-links-container {
   display: flex;
+  flex-wrap: wrap;
   /* align-self: center; */
-  padding-right: var(--l);
+  /* padding-right: var(--l); */
+  /* align-items: center; */
 }
 
 .navbar-header {
