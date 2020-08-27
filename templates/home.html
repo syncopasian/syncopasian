@@ -101,3 +101,15 @@
 <script>
   document.getElementById("group-photo").style.display = "none";
 </script>
+
+<script>
+  // needed to update the pictures as you follow the page links
+  $(document).ready(function(){
+    $(".page-link").click(function (evt) {
+      var pic = document.getElementById("group-photo-image");
+      pic.src = '/static/img/banner.jpg';
+      var target = $(evt.target);
+      document.getElementById("group-photo").style.display = "block";
+    });
+  });
+</script>
