@@ -15,6 +15,12 @@
     <script src="/static/js/app.js"></script>
     <script>
       $(document).ready(function(){
+        $(".index-page").click(function () {
+          $(".content-page").removeClass("my-nav-active");
+          $(".content-page").addClass("my-nav-btn");
+          document.getElementById("group-photo").style.display = "none";
+        });
+        
         $(".content-page").click(function (evt) {
           // needed to change the pic back to normal when navigating from the alumni page
           var pic = document.getElementById("group-photo-image");
