@@ -419,10 +419,10 @@ td {
 #gallery_right a {
 	font-size: 15pt;
 	color: #1089b5;
-    -webkit-transition: 0.1s ease;
-    -moz-transition: 0.1s ease;
-    -o-transition: 0.1s ease;
-    transition: 0.1s ease;
+  -webkit-transition: 0.1s ease;
+  -moz-transition: 0.1s ease;
+  -o-transition: 0.1s ease;
+  transition: 0.1s ease;
 }
 
 #gallery_right a:hover {
@@ -484,7 +484,9 @@ td {
   border: none; */
 }
 
-/* this container is used to create a responsive youtube iframe that resizes intelligently */
+/* this container is used to create a responsive youtube iframe that resizes intelligently 
+  Technique adopted from https://www.avexdesigns.com/blog/responsive-youtube-embed
+*/
 .youtube-container {
   position: relative;
   padding-top: 30px;
