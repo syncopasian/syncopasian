@@ -140,7 +140,8 @@ hr {
 
 .text-blurb {
   padding-top: 50px;
-  width: 65%;
+  width: 85%;
+  max-width: 900px;
   margin: auto;
 }
 
