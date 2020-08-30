@@ -268,10 +268,6 @@ div.colR b {
   padding: 0;
 }
 
-.my-nav {
-	float: right;
-	display: flex;
-}
 
 a.my-nav-btn {
   font-size: 14pt;
@@ -303,31 +299,7 @@ a.my-nav-active {
   color: var(--white);
 }
 
-.my-nav-active a:visited {
-  color: var(--white);
-}
 
-.my-nav a {
-	text-decoration: none;
-}
-
-.my-nav a:visited {
-	text-decoration: none;
-}
-
-.my-nav a:active {
-	text-decoration: none;
-}
-
-.navbar-collapse {
-  margin: 0px;
-  padding: 0px;
-}
-
-.collapse {
-  margin: 0px;
-  padding: 0px;
-}
 
 .dropdown-content {
   display: none;
