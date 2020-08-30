@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans'); */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
 
 :root {
   --syncoblue: #44c5ec;
@@ -183,6 +183,10 @@ div.colR {
   padding-left: 2%;
 }
 
+div.colR b {
+  font-weight: 400 !important;
+}
+
 .carousel-control {
   background: none;
 }
@@ -271,6 +275,7 @@ div.colR {
 
 .my-nav-btn {
   font-size: 14pt;
+  font-weight: 300;
   text-align: center;
   padding-left: 28px;
   padding-right: 28px;
@@ -519,7 +524,7 @@ td {
   text-align: center;
   padding: 21px 34px;
   margin: 20px 10px;
-  border: 2px solid var(--black);
+  border: 1px solid var(--black);
   text-decoration: none;
 }
 
