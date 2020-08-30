@@ -36,17 +36,8 @@
   </head>
 
   <body ng-app="syncopasian">
-    <nav class="navbar">
-      <span class="navbar-toggle" id="js-navbar-toggle">
-        <!-- manually make the hamburger icon because why not -->
-        <span class="toggle-bar"></span>
-        <span class="toggle-bar"></span>
-        <span class="toggle-bar"></span>
-      </span>
-      <a href="#/home" class="index-page" style="text-decoration: none;">
-        <img src="/static/img/synco_logo_new.png" class="navbar-logo" alt="Syncopasian's bird logo"></img>
-      </a>
-      <ul class="navbar-links-list" id="js-menu">
+    <nav class="navbar u-flex">
+      <ul class="navbar-links-list">
         <li>
           <a href="#/about" class="my-nav-btn content-page">About</a>
         </li>
@@ -56,6 +47,13 @@
         <li>
           <a href="#/discography" class="my-nav-btn content-page">Discography</a>
         </li>
+
+        <li>
+          <a href="#/home" class="index-page" style="text-decoration: none;">
+            <img src="/static/img/synco_logo_new.png" class="navbar-logo" alt="Syncopasian's bird logo"></img>
+          </a>
+        </li>
+        
         <li>
           <a href="#/news" class="my-nav-btn content-page">News</a>
         </li>
@@ -66,7 +64,6 @@
           <a href="#/contact" class="my-nav-btn content-page">Contact</a>
         </li>
       </ul>
-      <script src="/static/js/toggle_navbar.js"></script>
     </nav>
 
     <div id="page">
