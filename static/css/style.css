@@ -206,16 +206,26 @@ div.colR b {
   height: 100px;
   padding: var(--s) var(--l);
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
-  /* margin: 25px 0px; */
   background-color: var(--white);
   border-radius: 0px !important;
   margin-bottom: 0px !important;
 }
 
-.navbar-logo-container {
+/* Responsive navbar format adapted from https://itnext.io/how-to-build-a-responsive-navbar-using-flexbox-and-javascript-eb0af24f19bf */
+
+.navbar-links-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  /* flex-direction: row; */
+  padding: 0px 24px;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.navbar-logo {
   height: 100px;
   padding: 0px 40px;
   -webkit-transition: 0.5s ease;
@@ -224,50 +234,9 @@ div.colR b {
   transition: 0.5s ease;
 }
 
-.navbar-logo-container:hover {
+.navbar-logo:hover {
   background-color: var(--syncoblue--light);
 }
-
-.navbar-logo-img {
-  height: 100%;
-}
-
-.navbar-logo-text {
-  font-size: 18pt;
-  /* text-align: center; */
-  padding-left: 28px;
-  padding-right: 28px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  height: 65px;
-  margin: 0;
-  text-decoration: none;
-  color: var(--black);
-  -webkit-transition: 0.5s ease;
-  -moz-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
-.navbar-links-container {
-  display: flex;
-  flex-wrap: wrap;
-  /* align-self: center; */
-  /* padding-right: var(--l); */
-  /* align-items: center; */
-}
-
-.navbar-header {
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-default {
-  border: none !important;
-  margin: 0;
-  padding: 0;
-}
-
 
 a.my-nav-btn {
   font-size: 14pt;
@@ -299,9 +268,7 @@ a.my-nav-active {
   color: var(--white);
 }
 
-
-
-.dropdown-content {
+/* .dropdown-content {
   display: none;
   position: absolute;
   z-index: 1;
@@ -332,7 +299,7 @@ a.my-nav-active {
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
+} */
 
 .carousel-indicators {
   bottom: 5px;
