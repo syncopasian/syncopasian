@@ -273,7 +273,7 @@ div.colR b {
 	display: flex;
 }
 
-.my-nav-btn {
+a.my-nav-btn {
   font-size: 14pt;
   font-weight: 300;
   text-align: center;
@@ -291,34 +291,15 @@ div.colR b {
   display: block;
 }
 
-.my-nav-btn a {
-  color: var(--black);
-}
-
-.my-nav-btn:hover {
+a.my-nav-btn:hover {
   text-decoration: none;
   background-color: var(--syncoblue--light);
   color: var(--white);
 }
 
-.my-nav-active {
-  color: var(--white);
+a.my-nav-active {
+  text-decoration: none;
   background-color: var(--syncoblue--light);
-}
-
-.my-nav-active a:link {
-  color: var(--white);
-}
-
-.my-nav-active a:hover {
-  color: var(--white);
-}
-
-.my-nav-active a:active {
-  color: var(--white);
-}
-
-.my-nav-active a:focus {
   color: var(--white);
 }
 
