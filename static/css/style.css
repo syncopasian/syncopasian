@@ -508,7 +508,7 @@ td {
 .page-button:hover {
   color: var(--white);
   background-color: var(--syncoblue);
-  border: 2px solid var(--syncoblue);
+  border: 1px solid var(--syncoblue);
   cursor: pointer;
   text-decoration: none;
 }
