@@ -521,3 +521,7 @@ td {
   background-color: var(--syncoblue--light);
   padding: 24px;
 }
+
+.banner-link {
+  color: var(--white);
+}
