@@ -3,8 +3,8 @@
 
 :root {
   --syncoblue: #44c5ec;
-  --syncoblue--light: #5da7c1;
-  --syncoblue--xlight: #73b3ca;
+  --syncoblue-light: #5da7c1;
+  --syncoblue-xlight: #73b3ca;
 
   --secondary: #EC6B44;
 
@@ -37,7 +37,7 @@ body {
   font-weight: 200;
   font-size: 13pt;
   line-height: 180%;
-  background-color: var(--syncoblue--xlight);
+  background-color: var(--syncoblue-xlight);
 }
 
 h1 {
@@ -70,6 +70,7 @@ p {
 
 a {
   text-decoration: none;
+  color: var(--syncoblue-light)
 }
 
 hr {
@@ -79,7 +80,7 @@ hr {
 
 .narrow-bar {
   height: 5px;
-  background: var(--syncoblue--light);
+  background: var(--syncoblue-light);
 }
 
 .carousel-control {
@@ -228,11 +229,12 @@ div.colR b {
 }
 
 .navbar-logo:hover {
-  background-color: var(--syncoblue--light);
+  background-color: var(--syncoblue-light);
 }
 
 .my-nav-btn {
   text-decoration: none;
+  border-radius: 3px;
 }
 
 .navbar-links-list li {
@@ -276,13 +278,14 @@ a.my-nav-btn {
 
 a.my-nav-btn:hover {
   text-decoration: none;
-  background-color: var(--syncoblue--light);
+  background-color: var(--syncoblue-light);
   color: var(--white);
 }
 
+/* Consider changing active button behavior (i.e. bold text instead of keeping the background color on)*/
 a.my-nav-active {
   text-decoration: none;
-  background-color: var(--syncoblue--light);
+  background-color: var(--syncoblue-light);
   color: var(--white);
 }
 
@@ -350,7 +353,7 @@ a.my-nav-active {
 }
 
 .dropdown-content a:hover {
-  background-color: var(--syncoblue--light);
+  background-color: var(--syncoblue-light);
 }
 
 .dropdown:hover .dropdown-content {
@@ -507,8 +510,8 @@ td {
 
 .page-button:hover {
   color: var(--white);
-  background-color: var(--syncoblue);
-  border: 1px solid var(--syncoblue);
+  background-color: var(--syncoblue-light);
+  border: 1px solid var(--syncoblue-light);
   cursor: pointer;
   text-decoration: none;
 }
@@ -518,7 +521,7 @@ td {
   font-size: 24px;
   text-align: center;
   color: var(--white);
-  background-color: var(--syncoblue--light);
+  background-color: var(--syncoblue-light);
   padding: 24px;
 }
 
