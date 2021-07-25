@@ -525,3 +525,18 @@ td {
 .banner-link {
   color: var(--white);
 }
+
+i.fab, i.fas {
+  color:var(--syncoblue--light);
+  font-size: 30px;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+i:hover {
+  color:var(--syncoblue);
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
