@@ -536,10 +536,7 @@ i.fab, i.fas {
   padding: 5px;
 }
 
-i:hover {
+i.fab:hover, i.fas:hover {
   color:var(--syncoblue);
-  -webkit-transition: 0.5s ease;
-  -moz-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
   transition: 0.5s ease;
 }
