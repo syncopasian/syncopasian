@@ -527,6 +527,7 @@ td {
 
 .banner-link {
   color: var(--white);
+  text-decoration: underline;
 }
 
 i.fab, i.fas {
