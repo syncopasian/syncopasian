@@ -1,112 +1,117 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <title>MIT Syncopasian</title>
-    <meta name="description" content="Website for Syncopasian, MIT's premier East Asian a cappella group">
-    <meta name="keywords" content="MIT, Syncopasian, East Asian, a cappella, singing">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <link rel="shortcut icon" href="/static/img/logo_new.png"/>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/css/style.css?v=126"/>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.11/angular-ui-router.min.js"></script>
-    <script src="https://kit.fontawesome.com/85805220a8.js" crossorigin="anonymous"></script>
-    <script src="/static/js/app.js"></script>
-    <script>
-      $(document).ready(function(){
-        $(".index-page").click(function () {
-          $(".content-page").removeClass("my-nav-active");
-          $(".content-page").addClass("my-nav-btn");
-          document.getElementById("group-photo").style.display = "none";
-        });
-        
-        $(".content-page").click(function (evt) {
-          // needed to change the pic back to normal when navigating from the alumni page
-          var pic = document.getElementById("group-photo-image");
-          pic.src = '/static/img/banner.jpg';
-          $(".content-page").removeClass("my-nav-active");
-          $(".content-page").addClass("my-nav-btn");
-          var target = $(evt.target);
-          target.addClass("my-nav-active");
-          document.getElementById("group-photo").style.display = "block";
-        });
+
+<head>
+  <title>MIT Syncopasian</title>
+  <meta name="description" content="Website for Syncopasian, MIT's premier East Asian a cappella group">
+  <meta name="keywords" content="MIT, Syncopasian, East Asian, a cappella, singing">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="shortcut icon" href="/static/img/logo_new.png" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/style.css?v=126" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.11/angular-ui-router.min.js"></script>
+  <script src="https://kit.fontawesome.com/85805220a8.js" crossorigin="anonymous"></script>
+  <script src="/static/js/app.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".index-page").click(function () {
+        $(".content-page").removeClass("my-nav-active");
+        $(".content-page").addClass("my-nav-btn");
+        document.getElementById("group-photo").style.display = "none";
       });
-    </script>
-  </head>
 
-  <!-- <div class="banner">
-    Signups for Fall 2022 auditions are now open! Click <a href="#/auditions" class="banner-link page-link">here</a> for more information!
-  </div> -->
+      $(".content-page").click(function (evt) {
+        // needed to change the pic back to normal when navigating from the alumni page
+        var pic = document.getElementById("group-photo-image");
+        pic.src = '/static/img/banner.jpg';
+        $(".content-page").removeClass("my-nav-active");
+        $(".content-page").addClass("my-nav-btn");
+        var target = $(evt.target);
+        target.addClass("my-nav-active");
+        document.getElementById("group-photo").style.display = "block";
+      });
+    });
+  </script>
+</head>
 
-  <body ng-app="syncopasian">
-    <nav class="navbar">
-      <span class="navbar-toggle" id="js-navbar-toggle">
-        <!-- manually make the hamburger icon because why not -->
-        <span class="toggle-bar"></span>
-        <span class="toggle-bar"></span>
-        <span class="toggle-bar"></span>
-      </span>
-      <a href="#/home" class="index-page" style="text-decoration: none;">
-        <img src="/static/img/synco_logo_new.png" class="navbar-logo" alt="Syncopasian's bird logo"></img>
+<div class="banner">
+  Signups for Fall 2022 auditions are now open! Click <a href="#/auditions" class="banner-link page-link">here</a> for
+  more information!
+</div>
+
+<body ng-app="syncopasian">
+  <nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+      <!-- manually make the hamburger icon because why not -->
+      <span class="toggle-bar"></span>
+      <span class="toggle-bar"></span>
+      <span class="toggle-bar"></span>
+    </span>
+    <a href="#/home" class="index-page" style="text-decoration: none;">
+      <img src="/static/img/synco_logo_new.png" class="navbar-logo" alt="Syncopasian's bird logo"></img>
+    </a>
+    <ul class="navbar-links-list" id="js-menu">
+      <li>
+        <a href="#/about" class="my-nav-btn content-page">About</a>
+      </li>
+      <li>
+        <a href="#/current-members" class="my-nav-btn content-page">Members</a>
+      </li>
+      <li>
+        <a href="#/discography" class="my-nav-btn content-page">Discography</a>
+      </li>
+      <li>
+        <a href="#/news" class="my-nav-btn content-page">News</a>
+      </li>
+      <li>
+        <a href="#/auditions" class="my-nav-btn content-page">Auditions</a>
+      </li>
+      <li>
+        <a href="#/contact" class="my-nav-btn content-page">Contact</a>
+      </li>
+    </ul>
+    <script src="/static/js/toggle_navbar.js"></script>
+  </nav>
+
+  <div id="page">
+    <div id="group-photo">
+      <div class="narrow-bar"> </div>
+      <img id="group-photo-image" src="" style="width:100%" alt="Syncopasian performing on stage">
+      <div class="narrow-bar"> </div>
+      <div style="height: 20px"> </div>
+    </div>
+    <ui-view></ui-view> <!-- where the actual content is rendered -->
+  </div>
+
+  <div class="footer">
+    <!-- line heights of these divs must be equal to the line height of the parent to vertically center their contents -->
+    <div style="padding-left: 2em;">
+      <a style="text-decoration: none;" href="https://www.facebook.com/MITSyncopasian" target="_blank">
+        <i class="fab fa-facebook" alt='Facebook logo'></i>
       </a>
-      <ul class="navbar-links-list" id="js-menu">
-        <li>
-          <a href="#/about" class="my-nav-btn content-page">About</a>
-        </li>
-        <li>
-          <a href="#/current-members" class="my-nav-btn content-page">Members</a>
-        </li>
-        <li>
-          <a href="#/discography" class="my-nav-btn content-page">Discography</a>
-        </li>
-        <li>
-          <a href="#/news" class="my-nav-btn content-page">News</a>
-        </li>
-        <li>
-          <a href="#/auditions" class="my-nav-btn content-page">Auditions</a>
-        </li>
-        <li>
-          <a href="#/contact" class="my-nav-btn content-page">Contact</a>
-        </li>
-      </ul>
-      <script src="/static/js/toggle_navbar.js"></script>
-    </nav>
+      <a style="text-decoration: none;" href="https://www.instagram.com/syncopasian/" target="_blank">
+        <i class="fab fa-instagram" alt='Instagram logo'></i>
+      </a>
+      <a style="text-decoration: none;" href="https://twitter.com/syncopasian" target="_blank">
+        <i class="fab fa-twitter" alt='Twitter logo'></i>
+      </a>
+      <a style="text-decoration: none;" href="https://www.youtube.com/user/MITAsianAcappella" target="_blank">
+        <i class="fab fa-youtube" alt='YouTube play button'></i>
+      </a>
+      <a style="text-decoration: none;"
+        href="https://open.spotify.com/artist/3yXypH5cLXT33MBqvf4cuU?si=fY5QZpjjQZCEIuZ_xvRf8g" target="_blank">
+        <i class="fab fa-spotify" alt='Spotify logo'></i>
+      </a>
+      <a style="text-decoration: none;" href="mailto:syncopasian@gmail.com" target="_blank">
+        <i class="fas fa-envelope" alt='Gmail logo'></i>
+      </a>
+    </div>
+    <div style="padding-right: 2em; line-height: inherit; padding-left: 2em;">©2022 MIT Syncopasian | last updated 23
+      August 2022</div>
+  </div>
+</body>
 
-    <div id="page">
-      <div id="group-photo">
-        <div class="narrow-bar"> </div>
-        <img id="group-photo-image" src="" style="width:100%" alt="Syncopasian performing on stage">
-        <div class="narrow-bar"> </div>
-        <div style="height: 20px"> </div>
-      </div>
-      <ui-view></ui-view> <!-- where the actual content is rendered -->
-    </div>
-    
-    <div class="footer">
-      <!-- line heights of these divs must be equal to the line height of the parent to vertically center their contents -->
-      <div style="padding-left: 2em;">
-        <a style="text-decoration: none;" href="https://www.facebook.com/MITSyncopasian" target="_blank">
-          <i class="fab fa-facebook" alt='Facebook logo'></i>
-        </a>
-        <a style="text-decoration: none;" href="https://www.instagram.com/syncopasian/" target="_blank">
-          <i class="fab fa-instagram" alt='Instagram logo'></i>
-        </a>
-        <a style="text-decoration: none;" href="https://twitter.com/syncopasian" target="_blank">
-          <i class="fab fa-twitter" alt='Twitter logo'></i>
-        </a>
-        <a style="text-decoration: none;" href="https://www.youtube.com/user/MITAsianAcappella" target="_blank">
-          <i class="fab fa-youtube" alt='YouTube play button'></i>
-        </a>
-        <a style="text-decoration: none;" href="https://open.spotify.com/artist/3yXypH5cLXT33MBqvf4cuU?si=fY5QZpjjQZCEIuZ_xvRf8g" target="_blank">
-          <i class="fab fa-spotify" alt='Spotify logo'></i>
-        </a>
-        <a style="text-decoration: none;" href="mailto:syncopasian@gmail.com" target="_blank">
-          <i class="fas fa-envelope" alt='Gmail logo'></i>
-        </a>
-      </div>
-      <div style="padding-right: 2em; line-height: inherit; padding-left: 2em;">©2022 MIT Syncopasian | last updated 23 August 2022</div>
-    </div>
-  </body>
 </html>
