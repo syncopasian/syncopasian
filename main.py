@@ -15,3 +15,6 @@ def catch_all(path):
 def server_error(e):
     logging.exception('An error occurred during a request.')
 
+if __name__ == '__main__':
+    app.run(host='127.0.0.1', port=7777, debug=True)
+
