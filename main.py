@@ -1,6 +1,6 @@
 import logging
 
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 
 app = Flask(__name__)
 
@@ -9,6 +9,9 @@ app = Flask(__name__)
 def catch_all(path):
     if path == '':
         return render_template('index.html')
+    if path == 'rfp':
+        return redirect('https://atlas.mit.edu/atlas/Main.action?tab=home&sub=group_my_reimburse')
+
     return render_template(path + '.html')
 
 @app.errorhandler(500)
