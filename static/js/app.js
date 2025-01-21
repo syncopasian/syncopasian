@@ -1,5 +1,11 @@
-angular.module('syncopasian', ['ui.router'])
-.config([
+var syncopasianApp = angular.module('syncopasian', ['ui.router']);
+
+syncopasianApp.config(['$interpolateProvider', function($interpolateProvider) {
+  $interpolateProvider.startSymbol('{a');
+  $interpolateProvider.endSymbol('a}');
+}]);
+
+syncopasianApp.config([
   '$stateProvider',
   '$urlRouterProvider',
   function($stateProvider, $urlRouterProvider) {
@@ -42,3 +48,21 @@ angular.module('syncopasian', ['ui.router'])
     })
   $urlRouterProvider.otherwise('home');
 }]);
+
+syncopasianApp.factory('membersFactory', ['$http', function($http) {
+  return {
+    get: function () {
+      return $http.get('data/members.json');
+    }
+  };
+}]);
+
+syncopasianApp.controller('MemberListController', ['$scope', 'membersFactory', function MemberListController($scope, membersFactory) {
+  membersFactory.get().then(function (l) {
+    $scope.members = l.data;
+  });
+}]);
+
+syncopasianApp.controller('ShowAuditionController', function($scope) {
+  $scope.show = true;
+});

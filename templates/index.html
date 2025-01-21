@@ -37,12 +37,12 @@
   </script>
 </head>
 
-<!-- <div class="banner">
-  Signups for Fall 2024 auditions are now open! Click <a href="#/auditions#audition-info" class="banner-link page-link">here</a> for
-  more information!
-</div> -->
 
-<body ng-app="syncopasian">
+<body ng-app="syncopasian" ng-controller="ShowAuditionController">
+  <div class="banner" ng-if="show">
+  Signups for Spring 2025 auditions are now open! Click <a href="#/auditions#audition-info" class="banner-link page-link">here</a> for
+  more information!
+  </div>
   <nav class="navbar">
     <span class="navbar-toggle" id="js-navbar-toggle">
       <!-- manually make the hamburger icon because why not -->
@@ -66,7 +66,7 @@
       <li>
         <a href="#/news" class="my-nav-btn content-page">News</a>
       </li>
-      <li>
+      <li ng-if="show">
         <a href="#/auditions" class="my-nav-btn content-page">Auditions</a>
       </li>
       <li>

@@ -1,8 +1,15 @@
 import logging
 
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template, redirect, jsonify
+import json
 
 app = Flask(__name__)
+
+@app.route('/data/<path:path>')
+def serve_data(path):
+    with open(f'static/data/{path}', 'r') as f:
+        data = json.load(f)
+    return jsonify(data)
 
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')

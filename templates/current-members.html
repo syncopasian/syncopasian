@@ -1,4 +1,4 @@
-<div class="text-blurb" id="memberphotos" style="max-width: 960px">
+<div class="text-blurb" id="memberphotos" style="max-width: 960px" ng-controller="MemberListController">
   <!-- <h1>Meet our Synco-babies (newest members)!</h1><br> -->
   <!-- <h1>Say hello to our returning members!</h1><br> -->
   <h1>Say hello to our members!</h1>
@@ -6,116 +6,22 @@
   <!-- <br> -->
   <div class="bios-container u-flexColumn">
     <div class="member-bio">
-    <div class="member-bio">
-      <div class="colL"><img src="/static/img/members/sameer_pai.jpg"></img></div>
+    <div class="member-bio" ng-repeat="member in members">
+      <div class="colL"><img ng-src="/static/img/members/{a member.name.toLowerCase().replace(' ', '_') a}.jpg"></img></div>
       <div class="colR" min-width=100px>
-        <h2>Sameer Pai (2024): Concert Chair, Publicity Chair, Tech Chair</h2>
-        <b>Hometown</b>: Cliffside Park, NJ
-        <br><b>Major</b>: Master's in Engineering (Computer Science)
-        <br><b>Vocal Part</b>: Baritone
-        <br>"In his free time, Sameer can usually be found playing volleyball, practicing his Japanese, or grinding rhythm games!"
+        <h2>{a member.name a} ({a member.year a}): {a member.roles.join(', ') a}</h2>
+        <b>Hometown</b>: {a member.hometown a}
+        <br><b>Major</b>: {a member.major a}
+        <br><b>Vocal Part</b>: {a member.part.join(', ') a}
+        <span ng-if="member.songs.length > 0">
+          <br><b>Featured Songs</b>: {a member.songs.join(', ') a}
+        </span>
+        <span ng-if="member.arrangements.length > 0">
+          <br><b>Arrangements</b>: {a member.arrangements.join(', ') a}
+        </span>
+        <br>"{a member.blurb a}"
       </div>
     </div>
-
-    <div class="member-bio">
-      <div class="colL"><img src="/static/img/members/grace_jau.jpg"></img></div>
-      <div class="colR" min-width=100px>
-        <h2>Grace Jau (2025): Treasurer, Production Chair</h2>
-        <b>Hometown</b>: Redwood City, CA
-        <br><b>Major</b>: Course 6-3 (Computer Science)
-        <br><b>Vocal Part</b>: Soprano, Vocal Percussion
-        <br><b>Featured Songs</b>: Haru No Tonari, Gunjou, Betelgeuse, Empty, Lover, Gurenge
-        <br><b>Arrangements</b>: Gurenge, Dive Back In Time
-        <br>"Apart from singing, Grace loves crafting, puzzles, and collecting pressed pennies."
-      </div>
-    </div>
-    
-    <div class="member-bio">
-      <div class="colL"><img src="/static/img/members/joshua_lee.jpg"></img></div>
-      <div class="colR" min-width=100px>
-        <h2>Josh Lee (2025): Music Director</h2>
-        <b>Hometown</b>: Lincoln, NE
-        <br><b>Major</b>: Course 6-3 (Computer Science) & Course 18 (Mathematics)
-        <br><b>Vocal Part</b>: Baritone, Vocal Percussion
-        <!-- <br><b>Featured Songs</b>: -->
-        <br>“Josh’s favorite song is POP! by Nayeon.”
-      </div>
-    </div>
-    
-    <div class="member-bio">
-      <div class="colL"><img src="/static/img/members/rachel_loh.jpg"></img></div>
-      <div class="colR" min-width=100px>
-        <h2>Rachel Loh (2025): Stage Director, Social Chair</h2>
-        <b>Hometown</b>: Los Angeles, CA
-        <br><b>Major</b>: Course 6-3 (Computer Science) & Course 21M (Music)
-        <br><b>Vocal Part</b>: Alto
-        <br><b>Featured Songs</b>: Silhouette, Anti-Romantic, Aphrodite
-        <br>"Rachel likes to sing, dance, drink boba, listen to music, and spend time with her beloved sister."
-      </div>
-    </div>
-
-    <div class="member-bio">
-      <div class="colL"><img src="/static/img/members/kevin_kwak.jpg"></img></div>
-      <div class="colR" min-width=100px>
-        <h2>Kevin Kwak (2026): Stage Director, Social Chair</h2>
-        <b>Hometown</b>: Los Angeles, CA
-        <br><b>Major</b>: Course 6-3 (Computer Science)
-        <br><b>Vocal Part</b>: Bass, Vocal Percussion
-        <br><b>Featured Songs</b>: D (Half Moon), Empty
-        <br>"Kevin is probably either playing smash, sleeping, listening to Ado (seriously she's so good), or learning some random skill that he decided to pick up for that month."
-      </div>
-    </div>
-
-    <div class="member-bio">
-      <div class="colL"><img src="/static/img/members/nicholas_wei.jpg"></img></div>
-      <div class="colR" min-width=100px>
-        <h2>Nicholas Wei (2026): Music Director</h2>
-        <b>Hometown</b>: Saratoga, California
-        <br><b>Major</b>: Course 7 (Biology) & Course 6-3 (Computer Science)
-        <br><b>Vocal Part</b>: Tenor
-        <br><b>Featured Songs</b>: Spider
-        <br><b>Arrangements</b>: Anti-Romantic, Ditto
-        <br>"Nicholas enjoys going on hikes, staring at plants and bugs, and embarrassing other Syncos in the hallways."
-      </div>
-    </div>
-
-    <div class="member-bio">
-      <div class="colL"><img src="/static/img/members/gilford_ting.jpg"></img></div>
-      <div class="colR" min-width=100px>
-        <h2>Gilford Ting (2026): Fundraising Chair</h2>
-        <b>Hometown</b>: Cupertino, California
-        <br><b>Major</b>: Course 6-2 (Electrical Engineering & Computer Science)
-        <br><b>Vocal Part</b>: Bass
-        <br> "You'll probably find Gilford either making terrible puns, reading, writing, teaching, optimizing miniscule everyday tasks (like opening doors), or procrastinating by having good conversations with friends! :D"
-      </div>
-    </div>
-
-    <div class="member-bio">
-      <div class="colL"><img src="/static/img/members/jasmine_shone.jpg"></img></div>
-      <div class="colR" min-width=100px>
-        <h2>Jasmine Shone (2027): Archiving Chair</h2>
-        <b>Hometown</b>: Cleveland, Ohio
-        <br><b>Major</b>: Undeclared
-        <br><b>Vocal Part</b>: Mezzo
-        <!-- <br><b>Featured Songs</b>: -->
-        <br>"Besides singing, Jasmine likes to listen to music, go on long walks, and game dev!"
-      </div>
-    </div>
-
-    <div class="member-bio">
-      <div class="colL"><img src="/static/img/members/catherine_zhu.jpg"></img></div>
-      <div class="colR" min-width=100px>
-        <h2>Catherine Zhu (2027): Publicity Chair, Production Chair</h2>
-        <b>Hometown</b>: Seattle, WA
-        <br><b>Major</b>: Undeclared
-        <br><b>Vocal Part</b>: Alto
-        <br><b>Featured Songs</b>: Man Tian Xing Chen Bu Ji Ni
-        <br><b>Arrangements</b>: The Office Theme, Idol
-        <br>"Catherine can often be found doing random things that probably aren't the best use of her time. But hey, who cares."
-      </div>
-    </div>
-
-
 
   </div>
   <h2> Also check out our group's amazing alumni <a href="/#/alumni">here</a>! </h2>
