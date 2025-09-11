@@ -1,49 +1,5 @@
 [
   {
-    "name": "Sameer Pai",
-    "year": "2025",
-    "roles": ["Tech Chair"],
-    "hometown": "Cliffside Park, NJ",
-    "major": "Master's in Engineering (Computer Science)",
-    "part": ["Baritone", "Vocal Percussion"],
-    "songs": ["Zen Zen Zense", "Fireworks", "Overflowing"],
-    "arrangements": ["Bling-Bang-Bang-Born", "Overflowing"],
-    "blurb": "In his free time, Sameer can usually be found playing volleyball, practicing his Japanese, or grinding rhythm games!"
-  },
-  {
-    "name": "Grace Jau",
-    "year": "2025",
-    "roles": ["Production Chair"],
-    "hometown": "Redwood City, CA",
-    "major": "Course 6-3 (Computer Science)",
-    "part": ["Soprano", "Vocal Percussion"],
-    "songs": ["Haru No Tonari", "Gunjou", "Betelgeuse", "Empty", "Lover", "Gurenge", "Hana Ni Natte", "Fireworks", "Away"],
-    "arrangements": ["Gurenge", "Dive Back In Time", "Arcane Medley", "Fireworks", "Home Run"],
-    "blurb": "Apart from singing, Grace loves crafting, puzzles, and collecting pressed pennies."
-  },
-  {
-    "name": "Josh Lee",
-    "year": "2025",
-    "roles": ["Concert Chair"],
-    "hometown": "Lincoln, NE",
-    "major": "Course 6-3 (Computer Science) & Course 18 (Mathematics)",
-    "part": ["Baritone", "Vocal Percussion"],
-    "songs": [],
-    "arrangements": [],
-    "blurb": "Josh's favorite song is POP! by Nayeon."
-  },
-  {
-    "name": "Rachel Loh",
-    "year": "2025",
-    "roles": ["Music Director"],
-    "hometown": "Los Angeles, CA",
-    "major": "Course 6-3 (Computer Science) & Course 21M (Music)",
-    "part": ["Alto"],
-    "songs": ["Silhouette", "Anti-Romantic", "Aphrodite", "Big Fish", "Arcane Medley"],
-    "arrangements": [],
-    "blurb": "Rachel likes to sing, dance, drink boba, listen to music, and spend time with her beloved sister."
-  },
-  {
     "name": "Gilford Ting",
     "year": "2026",
     "roles": ["Treasurer", "Social Chair"],
@@ -53,17 +9,6 @@
     "songs": [],
     "arrangements": [],
     "blurb": "You'll probably find Gilford either making terrible puns, reading, writing, teaching, optimizing miniscule everyday tasks (like opening doors), or procrastinating by having good conversations with friends! :D"
-  },
-  {
-    "name": "Kevin Kwak",
-    "year": "2026",
-    "roles": ["Stage Director"],
-    "hometown": "Los Angeles, CA",
-    "major": "Course 6-3 (Computer Science)",
-    "part": ["Bass", "Vocal Percussion"],
-    "songs": ["D (Half Moon)", "Empty", "I Need U"],
-    "arrangements": [],
-    "blurb": "Kevin is probably either playing smash, gymming, listening to Ado (seriously she's so good), or learning some random skill that he decided to pick up for that month."
   },
   {
     "name": "Nicholas Wei",
@@ -97,17 +42,6 @@
     "songs": ["Man Tian Xing Chen Bu Ji Ni", "I Need U", "Cage", "Stellar Moments of Humankind", "Arcane Medley"],
     "arrangements": ["The Office Theme", "Idol", "Cage", "Away"],
     "blurb": "Catherine can often be found doing random things that probably aren't the best use of her time. But hey, who cares."
-  },
-  {
-    "name": "Kristine Lu",
-    "year": "2028",
-    "roles": ["Publicity Chair"],
-    "hometown": "Irvine, CA",
-    "major": "Course 18 and 6 (Mathematics and Computer Science)",
-    "part": ["Soprano"],
-    "songs": ["Count to Three"],
-    "arrangements": [],
-    "blurb": "Besides singing, Kristine likes to play the piano, go on runs, and explore new places with friends."
   },
   {
     "name": "Michelle Wei",
