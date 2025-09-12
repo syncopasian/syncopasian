@@ -7,7 +7,14 @@
   <div class="bios-container u-flexColumn">
     <div class="member-bio">
     <div class="member-bio" ng-repeat="member in members">
-      <div class="colL"><img ng-src="/static/img/members/{a member.name.toLowerCase().replace(' ', '_') a}.jpg"></img></div>
+      <div class="colL">
+        <span ng-if="member.blurb.length > 0">
+          <img ng-src="/static/img/members/{a member.name.toLowerCase().replace(' ', '_') a}.jpg"></img>
+        </span>
+        <span ng-if="member.blurb.length === 0">
+          <img ng-src="/static/img/bird.png"></img>
+        </span>
+      </div>
       <div class="colR" min-width=100px>
         <h2>{a member.name a} ({a member.year a}): {a member.roles.join(', ') a}</h2>
         <b>Hometown</b>: {a member.hometown a}
@@ -19,7 +26,10 @@
         <span ng-if="member.arrangements.length > 0">
           <br><b>Arrangements</b>: {a member.arrangements.join(', ') a}
         </span>
-        <br>"{a member.blurb a}"
+        <span ng-if="member.blurb.length > 0">
+          <br>"{a member.blurb a}"
+        </span>
+        
       </div>
     </div>
 

@@ -2,7 +2,7 @@
   {
     "name": "Gilford Ting",
     "year": "2026",
-    "roles": ["Treasurer", "Social Chair"],
+    "roles": ["Concert Chair"],
     "hometown": "Cupertino, California",
     "major": "Course 6-2 (Electrical Engineering & Computer Science)",
     "part": ["Baritone"],
@@ -17,8 +17,8 @@
     "hometown": "Saratoga, CA",
     "major": "Course 6-3 (Computer Science)",
     "part": ["Tenor"],
-    "songs": ["Spider"],
-    "arrangements": ["Anti-Romantic", "Ditto", "Super Idol"],
+    "songs": ["Spider", "Spring Day"],
+    "arrangements": ["Anti-Romantic", "Spring Day"],
     "blurb": "Nicholas enjoys going on hikes, staring at plants and bugs, and embarrassing other Syncos in the hallways."
   },
   {
@@ -29,8 +29,19 @@
     "major": "Course 7 (Biology)",
     "part": ["Soprano"],
     "songs": ["Arcane Medley"],
-    "arrangements": [],
+    "arrangements": ["GODS"],
     "blurb": "If you hear someone singing down dorm row after sunset, it's probably Sarah. Other than that, she's always down for a snowball fight in the winter :)"
+  },
+  {
+    "name": "Austin Chen",
+    "year": "2027",
+    "roles": ["Music Director"],
+    "hometown": "Lubbock, TX",
+    "major": "Unknown",
+    "part": ["Baritone"],
+    "songs": [],
+    "arrangements": [],
+    "blurb": ""
   },
   {
     "name": "Catherine Zhu",
@@ -39,20 +50,108 @@
     "hometown": "Seattle, WA",
     "major": "Course 6-3 (Computer Science)",
     "part": ["Alto"],
-    "songs": ["Man Tian Xing Chen Bu Ji Ni", "I Need U", "Cage", "Stellar Moments of Humankind", "Arcane Medley"],
-    "arrangements": ["The Office Theme", "Idol", "Cage", "Away"],
+    "songs": ["Man Tian Xing Chen Bu Ji Ni", "I Need U", "Cage", "Stellar Moments of Humankind", "Arcane Medley", "GODS", "Spring Day"],
+    "arrangements": ["Cage", "Away"],
     "blurb": "Catherine can often be found doing random things that probably aren't the best use of her time. But hey, who cares."
+  },
+  {
+    "name": "Alice Liu",
+    "year": "2028",
+    "roles": [],
+    "hometown": "St. Louis, MO",
+    "major": "Unknown",
+    "part": ["Alto"],
+    "songs": [],
+    "arrangements": [],
+    "blurb": ""
   },
   {
     "name": "Michelle Wei",
     "year": "2028",
-    "roles": ["Publicity Chair", "Production Chair"],
+    "roles": ["Production Chair", "Social Chair"],
     "hometown": "Saratoga, CA",
-    "major": "Undeclared",
+    "major": "Course 6-3 (Computer Science)",
     "part": ["Alto"],
     "songs": [],
     "arrangements": [],
     "blurb": "Besides singing, Michelle enjoys playing volleyball, listening to music, and spending time with friends."
+  },
+  {
+    "name": "Raina Wu",
+    "year": "2028",
+    "roles": ["Production Chair", "Treasurer"],
+    "hometown": "Seattle, WA",
+    "major": "Course 6-3 (Computer Science), 18 (Mathematics)",
+    "part": ["Alto"],
+    "songs": [],
+    "arrangements": [],
+    "blurb": "When she isn't drowning in psets or other work, Raina likes to doodle, read fantasy books, and do math problems with her little brother."
+  },  
+  {
+    "name": "Victoria Hu",
+    "year": "2028",
+    "roles": ["Stage Director"],
+    "hometown": "Saratoga, CA",
+    "major": "Course 6-3 (Computer Science), 18 (Mathematics)",
+    "part": ["Alto"],
+    "songs": [],
+    "arrangements": [],
+    "blurb": "Outside of Synco, Victoria also likes contemporary dance, cooking (burning) things with friends, and crashing out in stud 5 loud."
+  },
+  {
+    "name": "Chengyu Li",
+    "year": "2029",
+    "roles": ["Publicity Chair", "Social Media Chair"],
+    "hometown": "Beachwood, OH",
+    "major": "Undeclared",
+    "part": ["Alto"],
+    "songs": [],
+    "arrangements": [],
+    "blurb": ""
+  },
+  {
+    "name": "Henry Jiang",
+    "year": "2029",
+    "roles": [],
+    "hometown": "Troy, MI",
+    "major": "Undeclared",
+    "part": ["Bass"],
+    "songs": [],
+    "arrangements": [],
+    "blurb": ""
+  },
+  {
+    "name": "Isabelle Chan",
+    "year": "2029",
+    "roles": ["Social Media Chair"],
+    "hometown": "Houston, TX",
+    "major": "Course 6-7 (Computer Science & Molecular Biology)",
+    "part": ["Mezzo"],
+    "songs": [],
+    "arrangements": [],
+    "blurb": "Isabelle loves plants and has over 600 levels completed in Tomb of the Mask. She is always down to get frozen yogurt!"
+  },
+  {
+    "name": "Minghao Zou",
+    "year": "2029",
+    "roles": ["Social Media Chair", "Stage Director"],
+    "hometown": "Santa Clara, CA",
+    "major": "Course 6-4 (AI & Decision Making), Course 8 (Physics)",
+    "part": ["Baritone"],
+    "songs": [],
+    "arrangements": [],
+    "blurb": "Minghao is a physicist and amateur poet. He loves starry skies, mountain trails, and sharing laughter with friends :)"
+  },
+  {
+    "name": "Sophie Cheung",
+    "year": "2029",
+    "roles": ["Publicity Chair", "Social Media Chair"],
+    "hometown": "Campbell, CA",
+    "major": "Undeclared",
+    "part": ["Soprano"],
+    "songs": [],
+    "arrangements": [],
+    "blurb": ""
   }
 ]
 
