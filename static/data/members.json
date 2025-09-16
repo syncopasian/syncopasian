@@ -41,7 +41,7 @@
     "part": ["Baritone"],
     "songs": [],
     "arrangements": [],
-    "blurb": ""
+    "blurb": "Austin says hi!"
   },
   {
     "name": "Catherine Zhu",
@@ -102,12 +102,12 @@
     "name": "Chengyu Li",
     "year": "2029",
     "roles": ["Publicity Chair", "Social Media Chair"],
-    "hometown": "Beachwood, OH",
-    "major": "Undeclared",
+    "hometown": "Cleveland, OH",
+    "major": "Course 11-6 (Urban Science & Planning with Computer Science)",
     "part": ["Alto"],
     "songs": [],
     "arrangements": [],
-    "blurb": ""
+    "blurb": "Chengyu likes to watch a lot of C-drama and is often (and perhaps chronically) online. If you spot a Chengyu in the wild, be careful. She might reference a dead internet meme at you."
   },
   {
     "name": "Henry Jiang",
@@ -147,11 +147,11 @@
     "year": "2029",
     "roles": ["Publicity Chair", "Social Media Chair"],
     "hometown": "Campbell, CA",
-    "major": "Undeclared",
+    "major": "Course 6-9 (Computation & Cognition)",
     "part": ["Soprano"],
     "songs": [],
     "arrangements": [],
-    "blurb": ""
+    "blurb": "Sophie likes to run, bake, and drink matcha."
   }
 ]
 
