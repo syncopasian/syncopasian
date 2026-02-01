@@ -1,0 +1,543 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+
+:root {
+  --syncoblue: #44c5ec;
+  --syncoblue-light: #5da7c1;
+  --syncoblue-xlight: #73b3ca;
+
+  --secondary: #EC6B44;
+
+  --white: #ffffff;
+  --grey: #DDDDDD;
+  --black: #333333;
+
+  --xs: 4px;
+  --s: 8px;
+  --m: 16px;
+  --l: 24px;
+}
+
+.u-flex {
+  display: flex; 
+  /* implied flex-direction: row */
+}
+
+.u-flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.u-noTextDec {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 13pt;
+  line-height: 180%;
+  background-color: var(--syncoblue-xlight);
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 20pt;
+  line-height: 180%;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 15pt;
+  font-weight: 100;
+  line-height: 180%;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 14pt;
+  font-weight: 100;
+  line-height: 180%;
+}
+
+p {
+  font-size: 13.5pt;
+  line-height: 180%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--syncoblue-light)
+}
+
+hr {
+  margin: 30px 0px;
+  border-top: 1px solid var(--grey);
+}
+
+.narrow-bar {
+  height: 5px;
+  background: var(--syncoblue-light);
+}
+
+.carousel-control {
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.carousel-control span img {
+  height: 35px;
+  top: 50%;
+  position: absolute;
+}
+
+#contact-top {
+  width: 100%;
+  display: flex;
+}
+
+#contact-head {
+  font-size: 22pt;
+  width: 40%;
+}
+
+#contact-links {
+  padding-top: 3px;
+  width: 60%;
+}
+
+#contact-content {
+  width: 100%;
+  display: flex;
+}
+
+#contact-text {
+  width: 59%;
+  margin-right: 6%;
+}
+
+#gig_salad {
+  width: 35%;
+}
+
+#container-fluid {
+  padding: 0px;
+  margin: 0px;
+}
+
+#page {
+  background: var(--white);
+  margin: auto;
+  /* width: 1000px; */
+  border: none !important;
+  box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.20);
+  padding-bottom: 50px;
+}
+
+.text-blurb {
+  padding-top: 50px;
+  width: 85%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.text-blurb p {
+  text-align: justify;
+}
+
+.center {
+  text-align: center;
+}
+
+.bios-container {
+  align-items: center;
+}
+
+.member-bio {
+  padding-bottom: 50px;
+  vertical-align: text-top;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* background-color: #BBBBBB; */
+}
+
+.member-image img {
+  cursor: pointer;
+}
+
+div.colL {
+  text-align: left;
+  width: 25%;
+  min-width: 200px;
+}
+
+div.colR {
+  text-align: left;
+  width: 73%;
+  padding-left: 2%;
+}
+
+div.colR b {
+  font-weight: 400 !important;
+}
+
+.carousel-control {
+  background: none;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+  margin: auto;
+  -webkit-transition: 1s ease-in-out left;
+  -moz-transition: 1s ease-in-out left;
+  -o-transition: 1s ease-in-out left;
+  transition: 1s ease-in-out left;
+}
+
+.navbar {
+  background-color: var(--white);
+  border-radius: 0px !important;
+  margin-bottom: 0px !important;
+  border: 0px !important;
+}
+
+.navbar-links-list {
+  list-style-type: none;
+  padding: 0;
+  display: none;
+}
+
+.menu-active {
+  display: block;
+}
+
+.navbar-logo {
+  height: 101px;
+  padding: 0px 20px;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.navbar-logo:hover {
+  background-color: var(--syncoblue-light);
+}
+
+.my-nav-btn {
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.navbar-links-list li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.navbar-toggle {
+  padding: 9px 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.navbar-toggle .toggle-bar + .toggle-bar {
+  margin-top: 10px;
+}
+
+.navbar-toggle .toggle-bar {
+  background-color: var(--black);
+  display: block;
+  height: 3px;
+  width: 35px;
+  border-radius: 1px;
+}
+
+a.my-nav-btn {
+  font-size: 14pt;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+  text-decoration: none;
+  color: var(--black);
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+  display: block;
+}
+
+a.my-nav-btn:hover {
+  text-decoration: none;
+  background-color: var(--syncoblue-light);
+  color: var(--white);
+}
+
+/* Consider changing active button behavior (i.e. bold text instead of keeping the background color on)*/
+a.my-nav-active {
+  text-decoration: none;
+  background-color: var(--syncoblue-light);
+  color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  /* Responsive navbar format adapted from https://itnext.io/how-to-build-a-responsive-navbar-using-flexbox-and-javascript-eb0af24f19bf */
+
+  .navbar-links-list {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px 24px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .navbar-links-list li {
+    text-align: center;
+    margin: 0px auto;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .navbar-logo {
+    padding: 0px 40px;
+  }
+
+  a.my-nav-btn {
+    padding: 15px 20px;
+    margin: 0px 5px;
+  }
+}
+
+/* .dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.dropdown-content a {
+  display: block;
+  font-size: 13pt;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 30px;
+  width: 163px;
+  height: 50px;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--syncoblue-light);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+} */
+
+.carousel-indicators {
+  bottom: 5px;
+}
+
+.flex-caption {
+  width: 100%;
+  padding: 1%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #ffffff;
+  background: url("//syncopasian.scripts.mit.edu/wp/wp-content/themes/simplecorp/library/images/caption-bg.png") repeat;
+}
+
+.flex-caption > h4 {
+  color: white;
+  font-weight: 200;
+}
+
+td {
+  vertical-align: top;
+}
+
+.blk {
+  vertical-align: middle;
+}
+
+#gallery {
+  display: flex;
+	padding-top: 25px;
+	padding-left: 20px;
+}
+
+#gallery_left {
+  width: 35%;
+}
+
+#gallery_right {
+  width: 65%;
+}
+
+#gallery_right a {
+	font-size: 15pt;
+	color: #1089b5;
+  -webkit-transition: 0.1s ease;
+  -moz-transition: 0.1s ease;
+  -o-transition: 0.1s ease;
+  transition: 0.1s ease;
+}
+
+#gallery_right a:hover {
+	text-decoration: none;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+#gallery_right h1 {
+	padding: 0;
+	padding-bottom: 10px;
+	margin: 0;
+}
+
+#gallery_right h2 {
+	padding: 0;
+	padding-bottom: 10px;
+	margin: 0;
+}
+
+#news {
+	width: 100%;
+	display: flex;
+	margin-bottom: 25px;
+}
+
+#news-video {
+	width: 33%;
+}
+
+#news-caption {
+	padding-left: 2%;
+	width: 65%;
+}
+
+#memberphotos img {
+  width: 200px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--grey);
+  color: var(--black);
+  padding: 5px 0;
+  line-height: 40px;
+}
+
+/* .media-icon {
+  text-decoration: none;
+} */
+/* specifically, I include this to prevent the appearance of a small line next to the img link. For some reason putting the styling here doesn't work, but setting the style in the HTML does work... */
+
+.media-icon img {
+  height: 40px;
+  width: 40px;
+  margin-right: 3px;
+  /* text-decoration: none;
+  border: none; */
+}
+
+/* this container is used to create a responsive youtube iframe that resizes intelligently 
+  Technique adopted from https://www.avexdesigns.com/blog/responsive-youtube-embed
+*/
+.youtube-container {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.youtube-container iframe, .youtube-container object, .youtube-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.page-button-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.page-button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  color: var(--black);
+  background-color: transparent;
+  border-radius: 3px;
+  transition: 0.5s ease;
+  text-align: center;
+  padding: 21px 34px;
+  margin: 20px 10px;
+  border: 1px solid var(--black);
+  text-decoration: none;
+}
+
+.page-button:hover {
+  color: var(--white);
+  background-color: var(--syncoblue-light);
+  border: 1px solid var(--syncoblue-light);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.banner {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--syncoblue-light);
+  padding: 24px;
+}
+
+.banner-link {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+i.fab, i.fas {
+  color:var(--syncoblue--light);
+  font-size: 30px;
+  vertical-align: middle;
+  padding: 5px;
+  transition: 0.5s ease;
+}
+
+i.fab:hover, i.fas:hover {
+  color:var(--syncoblue);
+}

@@ -1,0 +1,49 @@
+        <h4>Ignition</h4>
+        <img class="blk" src="//syncopasian.scripts.mit.edu/wp/wp-content/uploads/2013/12/ignition-150x150.jpg"></img>
+        <iframe class="blk" src="//bandcamp.com/EmbeddedPlayer/album=8527465/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"></iframe>
+
+<div style="height: 40px;"> </div>
+<div id="gallery">
+    <div id="gallery_left">
+        <iframe style="border: 0; width: 310px; height: 550px;" src="https://bandcamp.com/EmbeddedPlayer/album=8527465/size=large/bgcol=ffffff/linkcol=63b2cc/transparent=true/" width="300" height="150" seamless=""><a href="http://syncopasian.bandcamp.com/album/ignition">Ignition by MIT Syncopasian</a></iframe>
+    </div>
+    <div id="gallery_right">
+        <iframe width="544" height="306" src="https://www.youtube.com/embed/videoseries?list=PL17JfE9srjh8AnWSRQArXi4N-dV--zc9B" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+</div>
+
+<!-- <div id="gallery">
+    <div id="gallery_left">
+        <iframe style="border: 0; width: 310px; height: 550px;" src="https://bandcamp.com/EmbeddedPlayer/album=8527465/size=large/bgcol=ffffff/linkcol=63b2cc/transparent=true/" width="300" height="150" seamless=""><a href="http://syncopasian.bandcamp.com/album/ignition">Ignition by MIT Syncopasian</a></iframe>
+    </div>
+    <div id="gallery_right">
+  <h1>Featured Video</h1>
+    <div id="news">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Bc-BSEglXzY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div> -->
+		<!-- <div id="news">
+        	<div id="news-video">
+				<iframe width="190" height="125" src="https://www.youtube.com/embed/jYaPnpXuVks" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div id="news-caption">
+				<h2>Yellow</h2>
+			</div>
+    	</div>
+		<div id="news">
+        	<div id="news-video">
+				<iframe width="190" height="125" src="https://www.youtube.com/embed/Bc-BSEglXzY" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div id="news-caption">
+				<h2>Brother</h2>
+			</div>
+    	</div>
+		<div id="news">
+        	<div id="news-video">
+				<iframe width="190" height="125" src="https://www.youtube.com/embed/MDHb9zfXKpw" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div id="news-caption">
+				<h2>Zen Zen Zense</h2>
+			</div>
+    	</div> -->
+		<!-- <a href="https://www.youtube.com/user/MITAsianAcappella">click here to see more by us!</a> -->

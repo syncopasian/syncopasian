@@ -1,0 +1,54 @@
+<div class="text-blurb" id="memberphotos" style="max-width: 960px" ng-controller="MemberListController">
+  <!-- <h1>Meet our Synco-babies (newest members)!</h1><br> -->
+  <!-- <h1>Say hello to our returning members!</h1><br> -->
+  <h1>Say hello to our members!</h1>
+  <br>
+  <!-- <br> -->
+  <div class="bios-container u-flexColumn">
+    <div class="member-bio">
+    <div class="member-bio" ng-repeat="member in members">
+      <div class="colL">
+        <span ng-if="member.blurb.length > 0">
+          <img ng-src="/static/img/members/{a member.name.toLowerCase().replace(' ', '_') a}.jpg"></img>
+        </span>
+        <span ng-if="member.blurb.length === 0">
+          <img ng-src="/static/img/bird.png"></img>
+        </span>
+      </div>
+      <div class="colR" min-width=100px>
+        <h2>{a member.name a} ({a member.year a}): {a member.roles.join(', ') a}</h2>
+        <b>Hometown</b>: {a member.hometown a}
+        <br><b>Major</b>: {a member.major a}
+        <br><b>Vocal Part</b>: {a member.part.join(', ') a}
+        <span ng-if="member.songs.length > 0">
+          <br><b>Featured Songs</b>: {a member.songs.join(', ') a}
+        </span>
+        <span ng-if="member.arrangements.length > 0">
+          <br><b>Arrangements</b>: {a member.arrangements.join(', ') a}
+        </span>
+        <span ng-if="member.blurb.length > 0">
+          <br>"{a member.blurb a}"
+        </span>
+        
+      </div>
+    </div>
+
+  </div>
+  <h2> Also check out our group's amazing alumni <a href="/#/alumni">here</a>! </h2>
+  <hr>
+  <p>Professional head shots provided by Brandon Wong.</p>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<script src="/static/js/member_modal.js"></script>
+
+<script>
+  document.getElementById("group-photo-image").src = '/static/img/carousel/website_1.jpg';
+</script>
