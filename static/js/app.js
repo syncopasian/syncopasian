@@ -64,5 +64,5 @@ syncopasianApp.controller('MemberListController', ['$scope', 'membersFactory', f
 }]);
 
 syncopasianApp.controller('ShowAuditionController', function($scope) {
-  $scope.show = true;
+  $scope.show = false;
 });

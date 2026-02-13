@@ -2,18 +2,18 @@
   {
     "name": "Gilford Ting",
     "year": "2026",
-    "roles": ["Concert Chair"],
+    "roles": ["Stage Director"],
     "hometown": "Cupertino, CA",
     "major": "Course 6-2 (Electrical Engineering & Computer Science)",
     "part": ["Baritone"],
-    "songs": [],
-    "arrangements": [],
+    "songs": ["Mean It"],
+    "arrangements": ["Mean It"],
     "blurb": "You'll probably find Gilford either making terrible puns, reading, writing, teaching, optimizing miniscule everyday tasks (like opening doors), or procrastinating by having good conversations with friends! :D"
   },
   {
     "name": "Nicholas Wei",
     "year": "2026",
-    "roles": ["Music Director"],
+    "roles": ["Social Chair"],
     "hometown": "Saratoga, CA",
     "major": "Course 6-3 (Computer Science)",
     "part": ["Tenor"],
@@ -24,12 +24,12 @@
   {
     "name": "Sarah Park",
     "year": "2026",
-    "roles": ["Social Chair"],
+    "roles": [],
     "hometown": "Orlando, FL",
     "major": "Course 7 (Biology)",
     "part": ["Soprano"],
-    "songs": ["Arcane Medley"],
-    "arrangements": ["GODS"],
+    "songs": ["Arcane Medley", "How Can I Love the Heartbreak, You're the One I Love"],
+    "arrangements": ["GODS", "How Can I Love the Heartbreak, You're the One I Love"],
     "blurb": "If you hear someone singing down dorm row after sunset, it's probably Sarah. Other than that, she's always down for a snowball fight in the winter :)"
   },
   {
@@ -46,18 +46,18 @@
   {
     "name": "Catherine Zhu",
     "year": "2027",
-    "roles": ["President"],
+    "roles": ["Music Director"],
     "hometown": "Seattle, WA",
     "major": "Course 6-3 (Computer Science)",
     "part": ["Alto"],
-    "songs": ["Man Tian Xing Chen Bu Ji Ni", "I Need U", "Cage", "Stellar Moments of Humankind", "Arcane Medley", "GODS", "Spring Day"],
-    "arrangements": ["Cage", "Away"],
+    "songs": ["Man Tian Xing Chen Bu Ji Ni", "I Need U", "Cage", "Stellar Moments of Humankind", "Arcane Medley", "GODS", "Spring Day", "Lemon"],
+    "arrangements": ["Cage", "Away", "Lemon"],
     "blurb": "Catherine can often be found doing random things that probably aren't the best use of her time. But hey, who cares."
   },
   {
     "name": "Alice Liu",
     "year": "2028",
-    "roles": [],
+    "roles": ["Concert Chair"],
     "hometown": "St. Louis, MO",
     "major": "Course 6-4 (AI & Decision Making), 18 (Mathematics)",
     "part": ["Alto"],
@@ -66,15 +66,15 @@
     "blurb": "Alice enjoys reading, making matcha lattes, and exploring cute cafes around Boston."
   },
   {
-    "name": "Michelle Wei",
+    "name": "Justin Yamaguchi",
     "year": "2028",
-    "roles": ["Production Chair", "Social Chair"],
-    "hometown": "Saratoga, CA",
-    "major": "Course 6-3 (Computer Science)",
-    "part": ["Alto"],
+    "roles": [],
+    "hometown": "Unknown",
+    "major": "Unknown",
+    "part": ["Bass"],
     "songs": [],
     "arrangements": [],
-    "blurb": "Besides singing, Michelle enjoys playing volleyball, listening to music, and spending time with friends."
+    "blurb": ""
   },
   {
     "name": "Raina Wu",
@@ -90,7 +90,7 @@
   {
     "name": "Victoria Hu",
     "year": "2028",
-    "roles": ["Stage Director"],
+    "roles": ["President"],
     "hometown": "Saratoga, CA",
     "major": "Course 6-3 (Computer Science), 18 (Mathematics)",
     "part": ["Alto"],
@@ -101,7 +101,7 @@
   {
     "name": "Chengyu Li",
     "year": "2029",
-    "roles": ["Publicity Chair", "Social Media Chair"],
+    "roles": ["Publicity Chair", "Music Director"],
     "hometown": "Cleveland, OH",
     "major": "Course 11-6 (Urban Science & Planning with Computer Science)",
     "part": ["Alto"],
@@ -112,7 +112,7 @@
   {
     "name": "Henry Jiang",
     "year": "2029",
-    "roles": [],
+    "roles": ["Stage Director"],
     "hometown": "Troy, MI",
     "major": "Course 8 (Physics), 18 (Mathematics)",
     "part": ["Bass"],
@@ -123,18 +123,29 @@
   {
     "name": "Isabelle Chan",
     "year": "2029",
-    "roles": ["Social Media Chair"],
+    "roles": ["Publicity Chair"],
     "hometown": "Houston, TX",
     "major": "Course 6-7 (Computer Science & Molecular Biology)",
     "part": ["Mezzo"],
-    "songs": [],
+    "songs": ["Flowers"],
     "arrangements": [],
     "blurb": "Isabelle loves plants and has over 600 levels completed in Tomb of the Mask. She is always down to get frozen yogurt!"
   },
   {
+    "name": "Kaiyan Ling",
+    "year": "2029",
+    "roles": [],
+    "hometown": "Unknown",
+    "major": "Undecided",
+    "part": ["Mezzo"],
+    "songs": [],
+    "arrangements": [],
+    "blurb": ""
+  },
+  {
     "name": "Minghao Zou",
     "year": "2029",
-    "roles": ["Social Media Chair", "Stage Director"],
+    "roles": ["Production Chair"],
     "hometown": "Santa Clara, CA",
     "major": "Course 6-4 (AI & Decision Making), 8 (Physics)",
     "part": ["Baritone"],
@@ -143,15 +154,15 @@
     "blurb": "Minghao is a physicist and amateur poet. He loves starry skies, mountain trails, and sharing laughter with friends :)"
   },
   {
-    "name": "Sophie Cheung",
+    "name": "Shelly Yang",
     "year": "2029",
-    "roles": ["Publicity Chair", "Social Media Chair"],
-    "hometown": "Campbell, CA",
-    "major": "Course 6-9 (Computation & Cognition)",
+    "roles": [],
+    "hometown": "Reno, NV",
+    "major": "Course 18-C (Mathematics with Computer Science)",
     "part": ["Soprano"],
     "songs": [],
     "arrangements": [],
-    "blurb": "Sophie likes to run, bake, and drink matcha."
+    "blurb": "Shelly loves producing YouTube videos, writing blog posts, and exploring! She also enjoys to bark/perc."
   }
 ]
 
